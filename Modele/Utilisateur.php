@@ -15,7 +15,8 @@
             $this->_S_mot_de_passe = $_S_mot_de_passe;
             $this->_B_photo = $_B_photo;
             $this->_S_nom_affichage = $_S_nom_affichage;
-            $this->_date_premiere_connexion = $_date_premiere_connexion;
+            $this->_D_date_premiere_connexion = $_D_date_premiere_connexion;
             $this->_D_date_derniere_connexion = $_D_date_derniere_connexion;
         }
+
     }
