@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between flex-wrap bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-blue-700">
+<nav class="flex items-start justify-start bg-white py-4 lg:px-12 shadow border-solid border-t-2">
 <!--modal-->
 
     <div class="relative z-10" id="principal">
@@ -26,17 +26,14 @@
     <!-------------------------------------------------------------------->
 
 
-    <div class="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
-        <div class="flex items-center flex-shrink-0 text-gray-800 mr-16">
+    <div class="flex justify-between w-full  pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0 lg:border-b-0 lg:w-auto bg-red-400">
+        <div class="flex items-center flex-shrink-0 text-gray-800 mr-2">
             <span class="font-semibold text-xl tracking-tight">Quaso</span>
         </div>
-    </div>
 
-    <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8">
-
-        <li class="text-md font-bold text-black lg:flex-grow">
+        <li class="list-none text-md font-bold text-black grow-0 lg:flex-grow">
             <a href="#responsive-header"
-               class="block mt-4 lg:inline-block lg:mt-0  px-4 py-2 mr-2">
+               class="block  lg:inline-block lg:mt-0  px-4 py-2 mr-2">
                 Menu
             </a> <!-- lien -->
             <button type="button" class="inline-flex w-full justify-center   px-4 py-2   sm:ml-3 sm:w-auto sm:text-sm" onclick="toggleModal()">
@@ -44,13 +41,23 @@
             </button> <!-- lien -->
         </li>
 
+
+    </div>
+
+
+    <div class="flex  w-full  lg:flex lg:items-center lg:block lg:w-auto lg:px-3 px-8 bg-emerald-200">
+
+
+
         <div class="flex ">
             <a href="#"
                class="block text-md px-4 py-2 font-bold text-black">Inscription</a>  <!-- lien composant -->
             <a href="#"
-               class=" block text-md px-4  ml-2 py-2  font-bold  mt-4  lg:mt-0">Connexion</a>  <!-- lien composant -->
+               class=" block text-md px-4  ml-2 py-2  font-bold    lg:mt-0">Connexion</a>  <!-- lien composant -->
         </div>
     </div>
+
+
 
 
 
