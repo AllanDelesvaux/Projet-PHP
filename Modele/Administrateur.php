@@ -2,34 +2,37 @@
 
 class Administrateur extends Utilisateur
 {
-    public function ajouterRecette($recette){
-        $_requete = 'insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prepa,cout,difficulte) values ()'
+    /*public function ajouterRecette($recette){
+        $requete = 'insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prepa,cout,difficulte) values ()';
+    }*/
+
+    public function ajouterRecette($NomRecette,$noteMoyenne,$photo,$tempsDePreparation,$descriptionPrepa,$cout,$difficulte){
+        $connection = new ConnectionDatabase();
+        $connection = $connection->getConnection();
+        $requete = "insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prépa,cout,difficulte) values ('".$NomRecette."','".$noteMoyenne."','".$NomRecette."','".$photo."','".$tempsDePreparation."','".$descriptionPrepa."','".$cout."','".$difficulte."')";
+        $O_statement = $connection->prepare($requete);
+        $O_statement->execute();
     }
-
-    public function ajouterRecette($NomRecette,$noteMoyenne,$photo,$tempDePreparation,$descriptionPrepa,$cout,$difficulte){
-        $_requete = "insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prépa,cout,difficulte) values (:NomRecette,:noteMoyenne,:NomRecette,:photo,:tempDePreparation,:descriptionPrepa,:cout,:difficulte)";
-        $O_statement = $O_connexion->prepare($_requete);
-
-        foreach ($)
-        $O_statement->bindValue(':NomRecette', $NomRecette);
-        $O_statement->bindValue(':NomRecette', $NomRecette);
-        $O_statement->bindValue(':NomRecette', $NomRecette);
-        $O_statement->bindValue(':NomRecette', $NomRecette);
-
-    }
-
 
     public function modifierRecette($NomRecette,$noteMoyenne,$photo,$tempDePreparation,$descriptionPrepa,$cout,$difficulte){
-
 
     }
 
 
     public function supprimerRecette($id){
-
+        $connection = new ConnectionDatabase();
+        $connection = $connection->getConnection();
+        $requete = "DELETE FROM Recette where id=".$id."\'";
+        $O_statement = $connection->prepare($requete);
+        $O_statement->execute();
     }
 
     public function supprimerUtilisateur($id){
+        $connection = new ConnectionDatabase();
+        $connection = $connection->getConnection();
+        $requete = "DELETE FROM Utilisateur where id=".$id."\'";
+        $O_statement = $connection->prepare($requete);
+        $O_statement->execute();
 
     }
 
