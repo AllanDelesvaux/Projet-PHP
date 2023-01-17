@@ -5,7 +5,7 @@
             <h2 class="my-20 text-center text-3xl font-bold tracking-tight text-gray-900">Connectez-vous</h2>
             <img class="mt-8 mx-auto h-12 w-auto" src="./assets/connexion.svg" alt="connexion">
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form class="mt-8 space-y-6" action="/Controleurs/login.php" method="POST">
             <input type="hidden" name="remember" value="true">
             <div class="-space-y-px rounded-md shadow-sm">
                 <div>
@@ -33,6 +33,7 @@
                     </button>
                     <?php
                         session_start();
+                    var_dump($_SESSION['error']);
                         if($_SESSION['error'] == 1 ){
                             echo '<h3 style="color:#FF0000";>Login ou mot de passe éroné .</h3>';
                     }

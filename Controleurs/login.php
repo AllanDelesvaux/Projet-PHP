@@ -1,6 +1,7 @@
 <?php
+    include "../Noyau/ConnectionDatabase.php";
 
-    $login =$_POST['login'];
+    $login =$_POST['email'];
     $password =$_POST['password'];
 
     $O_conn = new ConnectionDatabase();
@@ -9,7 +10,7 @@
     $O_statement = $O_conn->prepare($_requete);
     $O_statement->execute();
     $O_statement->setFetchMode(PDO::FETCH_ASSOC); // FETCH_ASSOC
-    $result = $O_statement->fetch(); 
+    $result = $O_statement->fetch();
 
     if(!(empty($result)))
     {
@@ -18,7 +19,6 @@
         exit();
     }
     else{
-    session_start();
     for ($i = 0; $i < sizeof($result); ++$i)
         {
             if($result[$i]['identifiant']===$login && $result[$i]['mdp']===$password)
@@ -31,7 +31,8 @@
 
         }
         $_SESSION['error'] = 1;
-        //Affichage d'un msg d'erreur de connexion
+        var_dump($_SESSION['error']);
+        //header(' Location: /Vues/standard/composant/formulaire.php');
     }
 
  ?>

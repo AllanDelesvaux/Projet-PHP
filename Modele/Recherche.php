@@ -14,5 +14,5 @@
            $O_statement->setFetchMode(PDO::FETCH_OBJ); // FETCH_ASSOC
            return $O_statement->fetch(); // objet recette; // probleme si plusieur recette contiennent le meme nom
         }
-    }
-    
+    }    
+?> 
