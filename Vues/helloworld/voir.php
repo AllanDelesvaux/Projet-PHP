@@ -1,6 +1,8 @@
 <?php
 
-$connection = new ConnectionDatabase();
+echo "<p>" . $A_vue['helloworld']  . "</p>";
+
+/*$connection = new ConnectionDatabase();
 
 $connection = $connection->getConnection();
 
@@ -16,4 +18,4 @@ if ( ($O_statement = $connection->query($requete)) !== false)
     }
 } else {
     echo 'mauvaise requete';
-}
+}*/

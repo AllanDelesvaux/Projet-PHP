@@ -1,0 +1,18 @@
+<?php
+
+require '../Noyau/ChargementAuto.php';
+
+final class ControleurPrincipal
+{
+    public function defautAction()
+    {
+        Vue::montrer('voir', array('rec' => 'yo'));
+
+    }
+
+    public function AfficheVuePrinc()
+    {
+
+    }
+
+}

@@ -1,3 +1,6 @@
+<?php
+
+echo '
 <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
     <div class="w-full max-w-md space-y-8">
         <div>
@@ -5,7 +8,7 @@
             <h2 class="my-20 text-center text-3xl font-bold tracking-tight text-gray-900">Connectez-vous</h2>
             <img class="mt-8 mx-auto h-12 w-auto" src="./assets/connexion.svg" alt="connexion">
         </div>
-        <form class="mt-8 space-y-6" action="/Controleurs/login.php" method="POST">
+        <form class="mt-8 space-y-6" action="/ControleurHelloworld/defaut" method="POST">
             <input type="hidden" name="remember" value="true">
             <div class="-space-y-px rounded-md shadow-sm">
                 <div>
@@ -30,16 +33,18 @@
                 <div>
                     <button type="submit" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                         Valider
-                    </button>
+                    </button>'
+?>
                     <?php
                         session_start();
-                    var_dump($_SESSION['error']);
-                        if($_SESSION['error'] == 1 ){
+                    var_dump($_SESSION["error"]);
+                        if($_SESSION["error"] == 1 ){
                             echo '<h3 style="color:#FF0000";>Login ou mot de passe éroné .</h3>';
                     }
                     ?>
-                </div>
+<?php
+echo '               </div>
             </div>
         </form>
     </div>
-</div>
+</div> ';

@@ -17,6 +17,9 @@ final class Controleur
 
         // On éclate l'URL, elle va prendre place dans un tableau
         $A_urlDecortique = explode('/', $S_url);
+        foreach($A_urlDecortique as $element){
+            echo $element;
+        }
 
         if (empty($A_urlDecortique[0])) {
             // Nous avons pris le parti de préfixer tous les controleurs par "Controleur"
