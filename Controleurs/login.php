@@ -30,6 +30,7 @@
             }    
 
         }
+        $_SESSION['error'] = 1;
         //Affichage d'un msg d'erreur de connexion
     }
 
