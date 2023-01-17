@@ -1,6 +1,6 @@
 <?php
 
-require 'Constantes.php';
+require_once('Constantes.php');
 
 final class ChargementAuto
 {

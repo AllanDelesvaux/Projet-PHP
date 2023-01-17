@@ -1,5 +1,5 @@
 <?php
-    require '../Noyau/ChargementAuto.php';
+    require_once 'Noyau/ChargementAuto.php';
 
 
     final class ControleurLogin
@@ -19,7 +19,7 @@
             $O_statement->execute();
             $O_statement->setFetchMode(PDO::FETCH_ASSOC); // FETCH_ASSOC
             $result = $O_statement->fetch();
-
+        echo $result;
             if(!(empty($result)))
             {
                 echo 'Erreur de requete <br>';
