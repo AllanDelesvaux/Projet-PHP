@@ -4,24 +4,25 @@
     $login =$_POST['login'];
     $password =$_POST['password'];
 
-   // Connexion avec la bd
+    $O_conn = new ConnectionDatabase();
+    $O_conn = $O_conn->getConnection();
+    $_requete = "SELECT identifiant,mot_de_passe from Utilisateur ";
+    $O_statement = $O_conn->prepare($_requete);
+    $O_statement->execute();
+    $O_statement->setFetchMode(PDO::FETCH_ASSOC); // FETCH_ASSOC
+    $result = $O_statement->fetch(); 
 
-    $query = "SELECT identifiant,mot_de_passe from Utilisateur ";
-    $dbResult;
-
-    if(!($dbResult = mysqli_query($dbLink,$query)))
+    if(!(empty($result)))
     {
         echo 'Erreur de requete <br>';
-        echo 'Erreur : ' . mysqli_error($dbLink);
-        echo 'Requete: ' . $query;
+        echo 'Requete: ' . $requete;
         exit();
     }
     else{
-        while($dbRow = mysqli_fetch_assoc($dbResult))
+    for ($i = 0; $i < sizeof($result); ++$i)
         {
-            if($dbRow['identifiant']===$login && $dbRow['mdp']===$password)
+            if($result[$i]['identifiant']===$login && $result[$i]['mdp']===$password)
             {
-                $_SESSION['error'] = 0;
                 $_SESSION['suid'] = session_id();
                 
                 //redirection vers page connecté
