@@ -1,6 +1,5 @@
 <?php
-    $_SESSION['error'] = 1;
-    $action =$_POST['action'];
+
     $login =$_POST['login'];
     $password =$_POST['password'];
 
@@ -19,6 +18,7 @@
         exit();
     }
     else{
+    session_start();
     for ($i = 0; $i < sizeof($result); ++$i)
         {
             if($result[$i]['identifiant']===$login && $result[$i]['mdp']===$password)
