@@ -16,4 +16,8 @@ final class ControleurHelloworld
 
     }
 
+    public function test(Array $A_parametres = null, Array $A_postParams = null){
+        Vue::montrer('helloworld/voir',array('test' => 'ca marche' ));
+    }
+
 }
