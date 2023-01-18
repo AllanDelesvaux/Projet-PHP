@@ -1,8 +1,6 @@
 <?php
-    require_once 'Noyau/ChargementAuto.php';
 
-
-    final class ControleurLogin extends Controleur
+    final class ControleurFormulaire
     {
         public function defautAction()
         {
@@ -16,8 +14,9 @@
             $O_conn = $O_conn->getConnection();
             $_requete = "SELECT identifiant,mot_de_passe from Utilisateur ";
             $O_statement = $O_conn->prepare($_requete);
-            $O_statement->execute(); // FETCH_ASSOC
+            $O_statement->execute();
             $result = $O_statement->fetchAll(PDO::FETCH_OBJ );
+
             if(!(empty($result)))
             {
                 echo 'Erreur de requete <br>';
@@ -27,13 +26,9 @@
             else{
             for ($i = 0; $i < sizeof($result); ++$i)
                 {
-
-                    
-                    Vue::montrer('standard/composant/login', array('body' => 'tasoeur'));   
                     if($result[$i]['identifiant']===$login && $result[$i]['mdp']===$password)
                     {
                         $_SESSION['suid'] = session_id();
-                        
                         //redirection vers page connecté
                         exit();
                     }    
@@ -48,7 +43,9 @@
     
         public function testformAction(Array $A_parametres = null, Array $A_postParams = null)
         {
-        echo 'tasoeur';    
+
+        echo 'ta soeur';
+    
         }
     
     }
