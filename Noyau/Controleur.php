@@ -1,6 +1,6 @@
 <?php
 
-class Controleur
+final class Controleur
 {
     private $_A_urlDecortique;
 
