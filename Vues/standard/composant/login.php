@@ -8,7 +8,7 @@ echo '
             <h2 class="my-20 text-center text-3xl font-bold tracking-tight text-gray-900">Connectez-vous</h2>
             <img class="mt-8 mx-auto h-12 w-auto" src="./assets/connexion.svg" alt="connexion">
         </div>
-        <form class="mt-8 space-y-6" action="/ControleurLogin/testform" method="POST">
+        <form class="mt-8 space-y-6" action="/login/testform" method="POST">
             <input type="hidden" name="remember" value="true">
             <div class="-space-y-px rounded-md shadow-sm">
                 <div>
@@ -48,3 +48,4 @@ echo '               </div>
         </form>
     </div>
 </div> ';
+?>
