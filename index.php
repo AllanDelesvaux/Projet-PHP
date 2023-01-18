@@ -25,6 +25,7 @@
 
     try
     {
+        echo $S_urlADecortiquer . $A_postParams . ' ';
         $O_controleur = new Controleur($S_urlADecortiquer, $A_postParams);
         $O_controleur->executer();
     }
