@@ -59,7 +59,7 @@
 
 </nav>
 
-<script src="/modal.js">
+<script src="/Vues/standard/modal.js">
     
 </script>
 
