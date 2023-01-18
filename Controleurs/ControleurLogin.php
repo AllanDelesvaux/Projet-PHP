@@ -40,7 +40,4 @@ final class ControleurLogin
     }
 }
         
-
-    
-
  ?>
