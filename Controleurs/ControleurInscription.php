@@ -2,7 +2,7 @@
     require_once 'Noyau/ChargementAuto.php';
 
 
-    final class ControleurInscription
+    final class ControleurInscription extends Controleur
     {
         public function defautAction()
         {
@@ -12,7 +12,10 @@
     
         public function inscrptionAction()
         {
-
+            $_login ='';
+            $_password ='';
+            $_username ='';
+            $_date ='';
     
         }
     

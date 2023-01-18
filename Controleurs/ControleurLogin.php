@@ -2,7 +2,7 @@
     require_once 'Noyau/ChargementAuto.php';
 
 
-    final class ControleurLogin
+    final class ControleurLogin extends Controleur
     {
         public function defautAction()
         {
@@ -16,9 +16,8 @@
             $O_conn = $O_conn->getConnection();
             $_requete = "SELECT identifiant,mot_de_passe from Utilisateur ";
             $O_statement = $O_conn->prepare($_requete);
-            $O_statement->execute();
-            $O_statement->setFetchMode(PDO::FETCH_ASSOC); // FETCH_ASSOC
-            $result = $O_statement->fetch();
+            $O_statement->execute(); // FETCH_ASSOC
+            $result = $O_statement->fetchAll(PDO::FETCH_OBJ );
         echo $result;
             if(!(empty($result)))
             {
