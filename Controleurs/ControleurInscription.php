@@ -1,6 +1,4 @@
 <?php
-    require_once 'Noyau/ChargementAuto.php';
-
 
     final class ControleurInscription
     {
