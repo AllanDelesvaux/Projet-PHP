@@ -59,7 +59,11 @@
 
 </nav>
 
+<<<<<<< HEAD
 <script src="/Vues/standard/modal.js">
+=======
+<script src="/modal.js">
+>>>>>>> bb4a4153743b66463de325a2e42870d8c2fb1352
     
 </script>
 

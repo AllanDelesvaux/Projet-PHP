@@ -18,7 +18,7 @@ final class Controleur
         // On éclate l'URL, elle va prendre place dans un tableau
         $A_urlDecortique = explode('/', $S_url);
         foreach($A_urlDecortique as $element){
-            echo $element;
+            // echo $element;
         }
 
         if (empty($A_urlDecortique[0])) {
@@ -55,6 +55,7 @@ final class Controleur
 
     public function executer()
     {
+    
         if (!class_exists($this->_A_urlDecortique['controleur'])) {
             throw new ControleurException($this->_A_urlDecortique['controleur'] . " n'est pas un controleur valide.");
         }
