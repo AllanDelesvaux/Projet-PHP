@@ -2,8 +2,8 @@
 <html lang="fr">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="./Style/output.css" rel="stylesheet">
-        <title>My sweet MVC</title>
+        <link href="/Style/output.css" rel="stylesheet">
+        <title>Quaso</title>
 
     </head>
     <body>

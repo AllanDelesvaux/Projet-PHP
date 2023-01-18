@@ -38,6 +38,5 @@ final class ControleurLogin
             //header(' Location: /Vues/standard/composant/formulaire.php');
         }
     }
-}
-        
- ?>
+}    
+?>
