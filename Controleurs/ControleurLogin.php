@@ -4,48 +4,44 @@
     {
         public function defautAction()
         {
-            Vue::montrer('Vues/standard/composant/login');
+            Vue::montrer('standard/composant/login');
         }
            
     
         public function testformAction(Array $A_parametres = null, Array $A_postParams = null)
         {
+            $login =$_POST['email'];
+            $password =$_POST['password'];
 
-            echo 'tasoeur';
-        //      $login =$_POST['email'];
-        //     $password =$_POST['password'];
-
-        //     $O_conn = new ConnectionDatabase();
-        //     $O_conn = $O_conn->getConnection();
-        //     $_requete = "SELECT identifiant,mot_de_passe from Utilisateur ";
-        //     $O_statement = $O_conn->prepare($_requete);
-        //     $O_statement->execute(); // FETCH_ASSOC
-        //     $result = $O_statement->fetchAll(PDO::FETCH_OBJ );
-        //     if(!(empty($result)))
-        //     {
-        //         echo 'Erreur de requete <br>';
-        //         echo 'Requete: ' . $_requete;
-        //         exit();
-        //     }
-        //     else{
-        //     for ($i = 0; $i < sizeof($result); ++$i)
-        //         {
+            $O_conn = new ConnectionDatabase();
+            $O_conn = $O_conn->getConnection();
+            $_requete = "SELECT identifiant,mot_de_passe from Utilisateur ";
+            $O_statement = $O_conn->prepare($_requete);
+            $O_statement->execute(); // FETCH_ASSOC
+            $result = $O_statement->fetchAll(PDO::FETCH_OBJ );
+            if(!(empty($result)))
+            {
+                echo 'Erreur de requete <br>';
+                echo 'Requete: ' . $_requete;
+                exit();
+            }
+            else{
+            for ($i = 0; $i < sizeof($result); ++$i)
+                {
 
                     
-        //             Vue::montrer('standard/composant/login', array('body' => 'tasoeur'));   
-        //             if($result[$i]['identifiant']===$login && $result[$i]['mdp']===$password)
-        //             {
-        //                 $_SESSION['suid'] = session_id();
+                    if($result[$i]['identifiant']===$login && $result[$i]['mdp']===$password)
+                    {
+                        $_SESSION['suid'] = session_id();
                         
-        //                 //redirection vers page connecté
-        //                 exit();
-        //             }    
+                        //redirection vers page connecté
+                        exit();
+                    }    
 
-        //         }
-        //         $_SESSION['error'] = 1;
-        //         var_dump($_SESSION['error']);
-        //         //header(' Location: /Vues/standard/composant/formulaire.php');
-        //     }
+                }
+                $_SESSION['error'] = 1;
+                //header(' Location: /Vues/standard/composant/formulaire.php');
+            }
         
         }
     

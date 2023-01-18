@@ -2,7 +2,7 @@
     require_once 'Noyau/ChargementAuto.php';
 
 
-    final class ControleurInscription extends Controleur
+    final class ControleurInscription
     {
         public function defautAction()
         {

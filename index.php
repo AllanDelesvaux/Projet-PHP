@@ -18,16 +18,17 @@
     $O_controleur = new Controleur($S_controleur, $S_action);
 */
 
+
     $S_urlADecortiquer = isset($_GET['url']) ? $_GET['url'] : null;
     $A_postParams = isset($_POST) ? $_POST : null;
 
     Vue::ouvrirTampon(); // on ouvre le tampon d'affichage, les contrôleurs qui appellent des vues les mettront dedans
-
+   
     try
     {
-        echo $S_urlADecortiquer . $A_postParams . ' ';
         $O_controleur = new Controleur($S_urlADecortiquer, $A_postParams);
         $O_controleur->executer();
+   
     }
     catch (ControleurException $O_exception)
     {

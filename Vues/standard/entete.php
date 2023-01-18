@@ -63,7 +63,7 @@
 
 </nav>
 
-<script src="modal.js">
+<script src="/modal.js">
     
 </script>
 
