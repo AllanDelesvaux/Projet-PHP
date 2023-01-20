@@ -11,15 +11,12 @@
                             <img src="./assets/bx-x.svg" alt="quitter"/>
                         </button>
                     </div>
-                    <?php Vue::montrer('standard/composant/zoneDeRecherche'); ?>
+                    <?php Vue::montrer('Composant/zoneDeRecherche'); ?>
 
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
 
 
@@ -51,8 +48,8 @@
 
         <div class="flex ">
 
-            <?php Vue::montrer('standard/composant/inscription'); ?>
-            <?php Vue::montrer('standard/composant/connexion'); ?>
+            <?php Vue::montrer('Composant/inscription'); ?>
+            <?php Vue::montrer('Composant/connexion'); ?>
         
         </div>
     </div>

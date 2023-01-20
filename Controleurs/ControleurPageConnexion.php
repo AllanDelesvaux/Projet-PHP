@@ -4,10 +4,10 @@ final class ControleurPageConnexion
 {
     public function defautAction()
     {
-        Vue::montrer('Vue/pageConnexion');
+        Vue::montrer('VuePage/pageConnexion');
     }
 
-    public function testformAction(array $A_parametres = null, array $A_postParams = null)
+    public function connexionAction(array $A_parametres = null, array $A_postParams = null)
     {
         $login = $_POST['email'];
         $password = $_POST['password'];

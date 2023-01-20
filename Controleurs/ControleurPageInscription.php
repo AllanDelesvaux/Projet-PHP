@@ -4,11 +4,16 @@ final class ControleurPageInscription
 {
     public function defautAction()
     {
-        Vue::montrer('Vue/pageInscription');
+        Vue::montrer('VuePage/pageInscription');
     }
 
-    public function testformAction(array $A_parametres = null, array $A_postParams = null)
+    public function inscriptionAction(array $A_parametres = null, array $A_postParams = null)
     {
+        $_login ='';
+        $_password ='';
+        $_username ='';
+        $_date ='';
+
         $login = $_POST['email'];
         $password = $_POST['password'];
 

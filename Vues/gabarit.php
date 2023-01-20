@@ -7,8 +7,8 @@
 
     </head>
     <body>
-        <?php Vue::montrer('standard/entete') ?>
+        <?php Vue::montrer('VuePage/entete') ?>
         <?php echo $A_vue['body'] ?>
-        <?php Vue::montrer('standard/pied') ?>
+        <?php Vue::montrer('VuePage/pied') ?>
     </body>
 </html>

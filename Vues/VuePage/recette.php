@@ -32,7 +32,7 @@
             <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
                 <dl class="grid grid-cols-1 gap-4 md:grid-cols-2">
                     <?php for($i=0;$i<6;$i++){
-                        Vue::montrer('standard/composant/blocTextRecette'); //text recette aléatoire
+                        Vue::montrer('Composant/blocTextRecette'); //text recette aléatoire
                     }
                     ?>
                 </dl>
