@@ -37,7 +37,6 @@
 
 
         <?php
-        session_start();
         if (!isset($_SESSION['suid']) ) {
             echo "<div class=\"flex\">";
 

@@ -12,15 +12,10 @@ final class ControleurPageConnexion
         $login = $_POST['email'];
         $password = $_POST['password'];
         $user = new Utilisateur($login,$password);
-        
-        
-        session_start();
-        if ($_SESSION['first'])
-            $_SESSION['first'] = false;
+  
         if (!(is_null($user->getId()))){
             if (!isset($_SESSION['suid'])) 
                 $_SESSION['suid'] = session_id();
-            
             header('Location: /');
             exit();
         } else {
