@@ -3,12 +3,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="/Style/output.css" rel="stylesheet">
-        <title>My sweet MVC</title>
+        <title>Quaso</title>
 
     </head>
     <body>
-        <?php Vue::montrer('standard/entete') ?>
+        <?php Vue::montrer('VuePage/entete') ?>
         <?php echo $A_vue['body'] ?>
-        <?php Vue::montrer('standard/pied') ?>
+        <?php Vue::montrer('VuePage/pied') ?>
     </body>
 </html>

@@ -1,13 +1,13 @@
 <?php
 
-final class ControleurLogin
+final class ControleurPageConnexion
 {
     public function defautAction()
     {
-        Vue::montrer('standard/composant/login');
+        Vue::montrer('VuePage/pageConnexion');
     }
 
-    public function testformAction(array $A_parametres = null, array $A_postParams = null)
+    public function connexionAction(array $A_parametres = null, array $A_postParams = null)
     {
         $login = $_POST['email'];
         $password = $_POST['password'];
@@ -22,6 +22,5 @@ final class ControleurLogin
             //Vue::montrer('standard/composant/login');
         }
     }
-}
-        
- ?>
+}    
+?>

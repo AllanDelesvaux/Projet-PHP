@@ -4,8 +4,7 @@ final class ControleurDefaut
 {
     public function defautAction()
     {
-        Vue::montrer('standard/composant/login');
-
+        Vue::montrer('VuePage/recette');
     }
 
 }
