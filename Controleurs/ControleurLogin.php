@@ -12,8 +12,8 @@ final class ControleurLogin
         $login = $_POST['email'];
         $password = $_POST['password'];
 
-        $user = new Utilisateur;
-         $result = $user.getData('identifiant', 'mot_de_passe');
+        $user = new Utilisateur();
+         $result = $user.fillData();
 
         if (!(empty($result))) {
             echo 'Erreur de requete <br>';
