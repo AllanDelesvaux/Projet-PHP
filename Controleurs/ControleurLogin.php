@@ -12,15 +12,12 @@ final class ControleurLogin
         $login = $_POST['email'];
         $password = $_POST['password'];
 
-        $O_conn = new ConnectionDatabase();
-        $O_conn = $O_conn->getConnection();
-        $_requete = "SELECT identifiant,mot_de_passe from Utilisateur ";
-        $O_statement = $O_conn->prepare($_requete);
-        $O_statement->execute(); // FETCH_ASSOC
-        $result = $O_statement->fetchAll(PDO::FETCH_OBJ);
+        $user = new Utilisateur;
+         $result = $user.getData('identifiant', 'mot_de_passe');
+
         if (!(empty($result))) {
             echo 'Erreur de requete <br>';
-            echo 'Requete: ' . $_requete;
+            echo 'Requete: ';
             exit();
         } else {
             for ($i = 0; $i < sizeof($result); ++$i) {
