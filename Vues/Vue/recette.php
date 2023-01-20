@@ -4,7 +4,7 @@
             <div class="relative inline-flex items-center mx-auto align-middle">
                 <div class="text-center">
                     <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
-                        Recette <br class="hidden lg:block">
+                        <br class="hidden lg:block">
                         Nom Recette(text dynamique selon la recette)
 
                     </h1>
@@ -29,18 +29,13 @@
             </div>
 
 
-
-
             <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
                 <dl class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <?php Vue::montrer('standard/composant/blocTextRecette'); ?>
-                    <?php Vue::montrer('standard/composant/blocTextRecette'); ?>
-                    <?php Vue::montrer('standard/composant/blocTextRecette'); ?>
-                    <?php Vue::montrer('standard/composant/blocTextRecette'); ?>
-                    <?php Vue::montrer('standard/composant/blocTextRecette'); ?>
-                    <?php Vue::montrer('standard/composant/blocTextRecette'); ?>
+                    <?php for($i=0;$i<6;$i++){
+                        Vue::montrer('standard/composant/blocTextRecette'); //text recette aléatoire
+                    }
+                    ?>
                 </dl>
-
             </div>
         </div>
     </div>

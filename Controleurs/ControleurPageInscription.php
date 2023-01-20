@@ -1,10 +1,10 @@
 <?php
 
-final class ControleurLogin
+final class ControleurPageInscription
 {
     public function defautAction()
     {
-        Vue::montrer('standard/composant/login');
+        Vue::montrer('Vue/pageInscription');
     }
 
     public function testformAction(array $A_parametres = null, array $A_postParams = null)
