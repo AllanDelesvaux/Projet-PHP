@@ -12,14 +12,15 @@ final class ControleurPageConnexion
         $login = $_POST['email'];
         $password = $_POST['password'];
         $user = new Utilisateur($login,$password);
-        echo $user->getId();
-
+        
+        
         if (!(is_null($user->getId()))){
-            Vue::montrer('index');
-        } else {
             session_start();
-            $_SESSION['error'] = 1;
-            //Vue::montrer('standard/composant/login');
+            $_SESSION['suid'] = session_id();
+            header('Location: /');
+            exit();
+        } else {
+            Vue::montrer('VuePage/pageConnexion');
         }
     }
 }    
