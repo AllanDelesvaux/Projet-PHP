@@ -14,12 +14,17 @@ final class ControleurPageConnexion
         $user = new Utilisateur($login,$password);
         
         
+        session_start();
+        if ($_SESSION['first'])
+            $_SESSION['first'] = false;
         if (!(is_null($user->getId()))){
-            session_start();
-            $_SESSION['suid'] = session_id();
+            if (!isset($_SESSION['suid'])) 
+                $_SESSION['suid'] = session_id();
+            
             header('Location: /');
             exit();
         } else {
+            session_unset();
             Vue::montrer('VuePage/pageConnexion');
         }
     }

@@ -33,9 +33,11 @@
                     </button>
 
 <?php
-    if(!isset($_SESSION['suid']))
+    session_start();
+    if(!$_SESSION['first'])
     {
-    echo '<h3 style="color:#FF0000";>Login ou mot de passe éroné .</h3>';
+        if(!isset($_SESSION['suid']))
+            echo '<h3 style="color:#FF0000";>Login ou mot de passe éroné .</h3>';
     }
 ?>              
                 </div>

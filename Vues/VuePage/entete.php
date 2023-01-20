@@ -45,13 +45,25 @@
     <div class="flex  w-full  lg:flex lg:items-center lg:block lg:w-auto lg:px-3 px-8 bg-emerald-200">
 
 
+        <?php
+        session_start();
+        if (!isset($_SESSION['suid']) || $_SESSION['first']) {
+            echo "<div class=\"flex\">";
 
-        <div class="flex ">
+            Vue::montrer('Composant/inscription');
+            Vue::montrer('Composant/connexion');
 
-            <?php Vue::montrer('Composant/inscription'); ?>
-            <?php Vue::montrer('Composant/connexion'); ?>
+            echo "</div>";
+        }
+        else{
+            echo 'CONNECTE';
+            // Vue::montrer('Composant/inscription');
+            // Vue::montrer('Composant/deconnexion');
+        }
+
         
-        </div>
+        ?>
+
     </div>
 
 </nav>
