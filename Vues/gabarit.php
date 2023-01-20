@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="./Style/output.css" rel="stylesheet">
+        <link href="/Style/output.css" rel="stylesheet">
         <title>My sweet MVC</title>
 
     </head>

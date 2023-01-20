@@ -11,9 +11,9 @@ final class ControleurLogin
     {
         $login = $_POST['email'];
         $password = $_POST['password'];
+        $user = new Utilisateur($login,$password);
 
-        $user = new Utilisateur();
-        $user->fillData();
+        echo $user->getNom();
 
         /*if (!(empty($result))) {
             echo 'Erreur de requete <br>';
