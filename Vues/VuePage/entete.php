@@ -38,7 +38,7 @@
 
         <?php
         session_start();
-        if (!isset($_SESSION['suid']) || $_SESSION['first']) {
+        if (!isset($_SESSION['suid']) ) {
             echo "<div class=\"flex\">";
 
             Vue::montrer('Composant/inscription');
@@ -47,9 +47,8 @@
             echo "</div>";
         }
         else{
-            echo 'CONNECTE';
-            // Vue::montrer('Composant/inscription');
-            // Vue::montrer('Composant/deconnexion');
+            Vue::montrer('Composant/profil');
+            Vue::montrer('Composant/deconnexion');
         }
 
         

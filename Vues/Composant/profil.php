@@ -1,0 +1,1 @@
+<a href="/" > <img class="mx-auto h-12 w-auto" src='/assets/profil.png' alt ='photo de profil'/> </a>
