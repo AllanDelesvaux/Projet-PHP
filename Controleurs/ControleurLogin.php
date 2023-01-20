@@ -13,9 +13,9 @@ final class ControleurLogin
         $password = $_POST['password'];
 
         $user = new Utilisateur();
-         $result = $user.fillData();
+        $user->fillData();
 
-        if (!(empty($result))) {
+        /*if (!(empty($result))) {
             echo 'Erreur de requete <br>';
             echo 'Requete: ';
             exit();
@@ -34,6 +34,7 @@ final class ControleurLogin
             $_SESSION['error'] = 1;
             //header(' Location: /Vues/standard/composant/formulaire.php');
         }
+        */
     }
 }
         
