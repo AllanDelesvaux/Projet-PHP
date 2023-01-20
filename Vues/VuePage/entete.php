@@ -1,5 +1,4 @@
 <nav class="flex items-start justify-start bg-white py-4 lg:px-12 shadow border-solid border-t-2">
-<!--modal-->
 
     <div class="relative z-10" id="principal">
         <div class="hidden fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" id="elementFlou"></div>
@@ -12,13 +11,10 @@
                         </button>
                     </div>
                     <?php Vue::montrer('Composant/zoneDeRecherche'); ?>
-
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <!-------------------------------------------------------------------->
 
@@ -28,15 +24,10 @@
             <span class="font-semibold text-xl tracking-tight">Quaso</span>
         </div>
 
-        <li class="list-none text-md font-bold text-black grow-0 lg:flex-grow">
-            <a href="#responsive-header"
-               class="block  lg:inline-block lg:mt-0  px-4 py-2 mr-2">
-                Menu
-            </a> <!-- lien -->
-            <button type="button" class="inline-flex w-full justify-center   px-4 py-2   sm:ml-3 sm:w-auto sm:text-sm" onclick="toggleModal()">
-                Recherche
-            </button> <!-- lien -->
-        </li>
+        <div class="list-none text-md font-bold text-black grow-0 lg:flex-grow">
+        <?php Vue::montrer('Composant/menu'); ?>
+        <?php Vue::montrer('Composant/recherche'); ?>
+        </div>
 
 
     </div>
@@ -69,6 +60,10 @@
 </nav>
 
 <script src="/Vues/ScriptJS/modal.js"></script>
+
+
+
+
     
 
 
