@@ -12,29 +12,15 @@ final class ControleurLogin
         $login = $_POST['email'];
         $password = $_POST['password'];
         $user = new Utilisateur($login,$password);
+        echo $user->getId();
 
-        echo $user->getNom();
-
-        /*if (!(empty($result))) {
-            echo 'Erreur de requete <br>';
-            echo 'Requete: ';
-            exit();
+        if (!(is_null($user->getId()))){
+            Vue::montrer('index');
         } else {
-            for ($i = 0; $i < sizeof($result); ++$i) {
-
-
-                if ($result[$i]['identifiant'] === $login && $result[$i]['mdp'] === $password) {
-                    $_SESSION['suid'] = session_id();
-
-                    //redirection vers page connecté
-                    exit();
-                }
-
-            }
+            session_start();
             $_SESSION['error'] = 1;
-            //header(' Location: /Vues/standard/composant/formulaire.php');
+            //Vue::montrer('standard/composant/login');
         }
-        */
     }
 }
         
