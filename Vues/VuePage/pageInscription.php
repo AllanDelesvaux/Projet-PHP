@@ -32,7 +32,6 @@
                     </button>
 
 <?php
-    session_start();
     if($_SESSION["error"] == 1 ){
         echo '<h3 style="color:#FF0000";>Login ou mot de passe éroné .</h3>';
     }
