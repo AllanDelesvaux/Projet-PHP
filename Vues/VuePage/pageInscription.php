@@ -2,8 +2,7 @@
     <div class="w-full max-w-md space-y-8">
         <div>
             <img class="mx-auto h-12 w-auto" src="/assets/cake.png" alt="Quaso">
-            <h2 class="my-20 text-center text-3xl font-bold tracking-tight text-gray-900">Connectez-vous</h2>
-            <img class="mt-8 mx-auto h-12 w-auto" src="./assets/connexion.svg" alt="connexion">
+            <h2 class="my-20 text-center text-3xl font-bold tracking-tight text-gray-900">S'inscrire</h2>
         </div>
         <form class="mt-8 space-y-6" action="/pageInscription/inscription" method="POST">
             <input type="hidden" name="remember" value="true">
