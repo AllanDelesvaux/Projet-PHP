@@ -6,6 +6,11 @@ class Administrateur extends Utilisateur
         $requete = 'insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prepa,cout,difficulte) values ()';
     }*/
 
+
+    public function __construct()
+    {
+    }
+
     public function ajouterRecette($NomRecette,$noteMoyenne,$photo,$tempsDePreparation,$descriptionPrepa,$cout,$difficulte){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
@@ -19,10 +24,10 @@ class Administrateur extends Utilisateur
     }
 
 
-    public function supprimerRecette($id){
+    public function supprimerRecette($nomRecette){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "DELETE FROM Recette where id=".$id."\'";
+        $requete = "DELETE FROM Recette where Nom_recette=".$nomRecette."\'";
         $O_statement = $connection->prepare($requete);
         $O_statement->execute();
     }
@@ -30,7 +35,7 @@ class Administrateur extends Utilisateur
     public function supprimerUtilisateur($id){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "DELETE FROM Utilisateur where id=".$id."\'";
+        $requete = "DELETE FROM Utilisateur where identifiant=".$id."\'";
         $O_statement = $connection->prepare($requete);
         $O_statement->execute();
 
