@@ -34,24 +34,7 @@
 
 
     <div class="flex  w-full  lg:flex lg:items-center lg:block lg:w-auto lg:px-3 px-8 bg-emerald-200">
-
-
-        <?php
-        if (!isset($_SESSION['suid']) ) {
-            echo "<div class=\"flex\">";
-
-            Vue::montrer('Composant/inscription');
-            Vue::montrer('Composant/connexion');
-
-            echo "</div>";
-        }
-        else{
-            Vue::montrer('Composant/profil');
-            Vue::montrer('Composant/deconnexion');
-        }
-
-        
-        ?>
+        <?php Vue::montrer('Composant/profile');?>
 
     </div>
 

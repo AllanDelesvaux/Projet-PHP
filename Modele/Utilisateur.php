@@ -9,24 +9,20 @@ class Utilisateur{
     private $_D_date_derniere_connexion;
 
     function __construct($identifiant,$mot_de_passe){
-        $this->fillData($identifiant,$mot_de_passe);
-    }
-    
-    function fillData($identifiant,$mot_de_passe){
-        $result = array();
-        $O_conn = new ConnectionDatabase();
-        $O_conn = $O_conn->getConnection();
-        $_requete = "SELECT * from Utilisateur where identifiant = '" .$identifiant."' AND mot_de_passe = '". $mot_de_passe . "'";
-        $O_statement = $O_conn->prepare($_requete);
-        $O_statement->execute(); // FETCH_ASSOC
-        $result = $O_statement->fetchAll(PDO::FETCH_OBJ);
-        $table = $result[0];
-        $this->_I_id = $table->identifiant;
-        $this->_S_mot_de_passe = $table->mot_de_passe;
-        $this->_B_photo = $table->photo;
-        $this->_S_nom_affichage = $table->nom;
-        $this->_D_date_premiere_connexion = $table->date_premiere_connexion;
-        $this->_D_date_derniere_connexion = $table->date_derniere_connexion;
+      $result = array();
+      $O_conn = new ConnectionDatabase();
+      $O_conn = $O_conn->getConnection();
+      $_requete = "SELECT * from Utilisateur where identifiant = '" .$identifiant."' AND mot_de_passe = '". $mot_de_passe . "'";
+      $O_statement = $O_conn->prepare($_requete);
+      $O_statement->execute(); // FETCH_ASSOC
+      $result = $O_statement->fetchAll(PDO::FETCH_OBJ);
+      $table = $result[0];
+      $this->_I_id = $table->identifiant;
+      $this->_S_mot_de_passe = $table->mot_de_passe;
+      $this->_B_photo = $table->photo;
+      $this->_S_nom_affichage = $table->nom;
+      $this->_D_date_premiere_connexion = $table->date_premiere_connexion;
+      $this->_D_date_derniere_connexion = $table->date_derniere_connexion;
     }
 
 
