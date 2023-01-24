@@ -18,11 +18,11 @@
     $O_controleur = new Controleur($S_controleur, $S_action);
 */
     session_start();
-
+    
     $S_urlADecortiquer = isset($_GET['url']) ? $_GET['url'] : null;
     $A_postParams = isset($_POST) ? $_POST : null;
 
-    //Vue::ouvrirTampon(); // on ouvre le tampon d'affichage, les contrôleurs qui appellent des vues les mettront dedans
+    Vue::ouvrirTampon(); // on ouvre le tampon d'affichage, les contrôleurs qui appellent des vues les mettront dedans
    
     try
     {
