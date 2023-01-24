@@ -15,7 +15,7 @@ final class ControleurPageConnexion
         $errorMsg="Identifiant ou mot de passe inccorect";
         if (!(is_null($user->getId()))){
             if (!isset($_SESSION['suid'])) 
-                $_SESSION['suid'] = session_id();
+                $_SESSION['suid'] = $user->getId();
             header('Location: /');
             exit();
         } else {

@@ -18,7 +18,7 @@
     $O_controleur = new Controleur($S_controleur, $S_action);
 */
     session_start();
-
+    
     $S_urlADecortiquer = isset($_GET['url']) ? $_GET['url'] : null;
     $A_postParams = isset($_POST) ? $_POST : null;
 
