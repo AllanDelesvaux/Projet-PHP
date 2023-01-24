@@ -1,1 +1,1 @@
-<a href="pageInscription" class="block text-md px-4 py-2 font-bold text-black">Inscription</a>
+<a href="pageInscription" class="py-3 px-5 w-full text-black font-semibold border border-black rounded-xl   transition ease duration-200" type="button">Inscription</a>

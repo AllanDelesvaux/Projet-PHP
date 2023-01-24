@@ -19,10 +19,11 @@
                         </div>
 
                         <div class="inline-block">
-                            <button class="py-3 px-5 w-full text-black font-semibold border border-black rounded-xl   transition ease duration-200" type="button">Inscription</button>
+                            <?php Vue::montrer('Composant/inscription'); ?>
+                            
                         </div>
                        <div class="inline-block">
-                           <button class="py-3 px-5 w-full text-black font-semibold border border-black rounded-xl   transition ease duration-200" type="button">Connexion</button>
+                           <?php Vue::montrer('Composant/connexion'); ?>
                        </div>
                     </div>
                 </div>
