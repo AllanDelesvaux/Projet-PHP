@@ -1,68 +1,38 @@
-<nav class="flex items-start justify-start bg-black py-4 lg:px-12 shadow border-solid border-t-2">
+<section class="bg-blueGray-50">
+    <div class="container mx-auto overflow-hidden">
+        <div class="flex items-center justify-between px-4 py-5 bg-blueGray-50">
+                <div class="flex  items-center  w-1/5   ">
+                        <a href="#">
+                            <img src="/assets/cake.svg" alt="" class="h-14">
+                        </a>
 
-    <div class="relative z-10" id="principal">
-        <div class="hidden fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" id="elementFlou"></div>
-        <div class="hidden fixed inset-0 z-10 overflow-y-auto" id="modal">
-            <div class="flex min-h-full items-end justify-center text-center sm:items-center sm:p-0 ">
-                <div class="relative transform overflow-hidden rounded-lg bg-black text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg bg-500-yellow">
-                    <div class="bg-white px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                        <button type="button" class="inline-flex w-full justify-center px-8 py-2 sm:ml-3 sm:w-auto sm:text-sm" onclick="toggleModal()">
-                            <img src="./assets/bx-x.svg" alt="quitter"/>
-                        </button>
-                        <?php Vue::montrer('Composant/zoneDeRecherche'); ?>
+                        <ul class="flex flex-row w-full justify-around ">
+                            <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:hover:bg-black after:hover:w-full after:hover:transition   after:duration-500 "><a href="#">Menu</a></li>
+                            <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 "><a href="#">Recherche</a></li>
+                        </ul>
+                </div>
+            <div class="w-2/5">
+                <div class="flex items-center flex-row">
+                   <div class="w-auto hidden lg:block">
+                       
+                       <?php
+                            if (!isset($_SESSION['suid']) ) {
+                                
+                                Vue::montrer('Composant/bouton', array('action' => '/pageInscription', 'valeur' => 'Inscription'));
+                                Vue::montrer('Composant/bouton', array('action' => '/pageConnexion', 'valeur' => 'Connexion'));
+
+                            }
+                            else{
+                                
+                                Vue::montrer('Composant/profil'); //icone de l'utilisateur
+                                Vue::montrer('Composant/bouton', array('action' => '/Deconnexion', 'valeur' => 'Déconnexion'));
+                            }
+
+        
+?>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-------------------------------------------------------------------->
-
-
-    <div class="flex justify-between w-full  pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0 lg:border-b-0 lg:w-auto bg-red-400">
-        <div class="flex items-center flex-shrink-0 text-gray-800 mr-2">
-            <span class="font-semibold text-xl tracking-tight">Quaso</span>
-        </div>
-
-        <div class="list-none text-md font-bold text-black grow-0 lg:flex-grow">
-        <?php Vue::montrer('Composant/menu'); ?>
-        <?php Vue::montrer('Composant/recherche'); ?>
-        </div>
-
-
-    </div>
-
-
-    <div class="flex  w-full  lg:flex lg:items-center lg:block lg:w-auto lg:px-3 px-8 bg-emerald-200">
-    <?php
-        if (!isset($_SESSION['suid']) ) {
-            echo "<div class=\"flex\">";
-
-            Vue::montrer('Composant/inscription');
-            Vue::montrer('Composant/connexion');
-
-            echo "</div>";
-        }
-        else{
-
-            echo "<div class=\"flex\">";
-            Vue::montrer('Composant/profile');
-            Vue::montrer('Composant/deconnexion');
-            echo "</div>";
-        }
-
-        
-?>
-
-    </div>
-
-</nav>
-
-<script src="/Vues/ScriptJS/modal.js"></script>
-
-
-
-
-    
-
-
+</section>

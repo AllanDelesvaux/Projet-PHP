@@ -1,1 +1,0 @@
-<a href="pageInscription" class="block text-md px-4 py-2 font-bold text-black">Inscription</a>
