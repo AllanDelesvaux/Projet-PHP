@@ -15,6 +15,10 @@
                 <div class="flex flex-wrap items-center">
                    <div class="w-auto hidden lg:block">
                         <div class="inline-block">
+                            <?php Vue::montrer('Composant/profil'); ?> <!-- icone de l'utilisateur -->
+                        </div>
+
+                        <div class="inline-block">
                             <button class="py-3 px-5 w-full text-black font-semibold border border-black rounded-xl   transition ease duration-200" type="button">Inscription</button>
                         </div>
                        <div class="inline-block">
