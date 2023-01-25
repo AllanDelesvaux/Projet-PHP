@@ -8,6 +8,4 @@
             <img src="./assets/brooke-lark-08bOYnH_r_E-unsplash.jpg" alt="fruit">
         </div>
     </div>
-
-
 </section>
