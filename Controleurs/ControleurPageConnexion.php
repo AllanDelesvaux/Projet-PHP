@@ -15,10 +15,20 @@ final class ControleurPageConnexion
         $errorMsg="Identifiant ou mot de passe inccorect";
         if (!(is_null($user->getId()))){
             if (!isset($_SESSION['suid'])) 
-                $_SESSION['suid'] = $user->getId();
+                $_SESSION['suid'] = $user;
+                $_SESSION['isAdmin'] = false;
             header('Location: /');
             exit();
         } else {
+            $admin = new Administrateur($login,$password);
+            if (!(is_null($admin->getId()))) {
+                if (!isset($_SESSION['suid'])){
+                    $_SESSION['suid'] = $admin;
+                    $_SESSION['isAdmin'] = true;
+                }
+                header('Location: /');
+                exit();
+            }
             session_unset();
             Vue::montrer('VuePage/pageConnexion', array('error' => $errorMsg));
         }

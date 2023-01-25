@@ -9,9 +9,11 @@
             <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 ">
                 <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg bg-500-yellow">
                     <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                        <button type="button" class="inline-flex w-full justify-center   px-4 py-2   sm:ml-3 sm:w-auto sm:text-sm" onclick="toggleModal">
-                            <img src="./assets/bx-x.svg" alt="quitter"/>
-                        </button>
+                        <form action="/">
+                            <button type="submit" class="inline-flex w-full justify-center   px-4 py-2   sm:ml-3 sm:w-auto sm:text-sm" onclick="toggleModal">
+                                <img src="./assets/bx-x.svg" alt="quitter"/>
+                            </button>
+                        </form>
                     </div>
                     <div class="flex items-center justify-center bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                         <img src="./assets/bx-search.svg" alt="recherche" class="px-4 py-2 rounded-md"/>
