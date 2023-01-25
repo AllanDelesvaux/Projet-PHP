@@ -71,8 +71,4 @@ class Utilisateur{
         $this->_D_date_derniere_connexion = $derniereCo;
     }
 
-	
-
-
-
     }
