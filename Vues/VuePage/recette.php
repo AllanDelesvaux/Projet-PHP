@@ -5,7 +5,7 @@
                 <div class="text-center">
                     <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
                         <br class="hidden lg:block">
-                        <?php $A_vue['nomRecette'] ?>
+                        <?php echo $A_vue['nomRecette'] ?>
                     </h1>
                 </div>
             </div>
@@ -32,9 +32,8 @@
 
             <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
                 <dl class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <?php for($i=0;$i<6;$i++){
-                        Vue::montrer('Composant/blocTextRecette'); //text recette aléatoire
-                    }
+                    <?php 
+                        Vue::montrer('Composant/blocTextRecette', array('note' => $A_vue['note'], 'tempsPrepa' => $A_vue['tempsPrepa'], 'cout' => $A_vue['cout'], 'difficulte' => $A_vue['difficulte'], 'description' => $A_vue['description']));
                     ?>
                 </dl>
             </div>
