@@ -3,7 +3,7 @@
 class ControleurPageRecette
 {
 
-    public function afficherNomRecetteAction(){
+    public function afficherNomRecetteAction(array $A_parametres = null, array $A_postParams = null){
         $nom_recette= $_POST['search']; // changer l'id de l'attribut en id utilisateur
         echo "hello";
         echo $nom_recette;
