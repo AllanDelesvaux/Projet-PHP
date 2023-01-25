@@ -1,6 +1,6 @@
 <div>
     <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
-        <!--icons -->
+    <img src="/assets/note.svg" alt="" class="h-10">
     </dt>
     <dd class="flex-grow">
         <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Note : </h2>
@@ -10,7 +10,7 @@
 </div>
 <div>
     <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
-        <!--icons -->
+    <img src="/assets/temps.svg" alt="" class="h-10">
     </dt>
     <dd class="flex-grow">
         <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Temps de Préparation : </h2>
@@ -20,7 +20,7 @@
 </div>
 <div>
     <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
-        <!--icons -->
+    <img src="/assets/cout.svg" alt="" class="h-10">
     </dt>
     <dd class="flex-grow">
         <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Coût : </h2>
@@ -30,7 +30,7 @@
 </div>
 <div>
     <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
-        <!--icons -->
+    <img src="/assets/difficulte.svg" alt="" class="h-10">
     </dt>
     <dd class="flex-grow">
         <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Difficulté : </h2>
