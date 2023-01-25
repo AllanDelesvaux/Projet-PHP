@@ -31,93 +31,96 @@
 
         }
 
-        /**
-         * @return mixed
-         */
-        public function getAListIngredients()
-        {
-            return $this->_A_list_ingredients;
+        public function photoRecette($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT photo FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo 'photoRecetteReussi' ;
+            }
         }
 
-        /**
-         * @return mixed
-         */
-        public function getAListUstensiles()
-        {
-            return $this->_A_list_ustensiles;
+        public function noteMoyenne($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT noteMoyenne FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo 'noteMoyenne reussi';
+            }
         }
 
-        /**
-         * @return mixed
-         */
-        public function getAParticularite()
-        {
-            return $this->_A_particularite;
+
+        /*public function ingredient($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT noteMoyenne FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo '<p>  recette supprimé </p>' ;
+            }
+        }*/
+
+        /*public function ustensiles($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT noteMoyenne FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo '<p>  recette supprimé </p>' ;
+            }
+        }*/
+
+        public function tempDePreparation($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT temps_de_preparation FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo 'temp de prepa reussi' ;
+            }
         }
 
-        /**
-         * @return mixed
-         */
-        public function getAAppreciations()
-        {
-            return $this->_A_appreciations;
+
+        public function difficulte($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT difficulte FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo 'recuperation difficulté reussie' ;
+            }
         }
 
-        /**
-         * @return mixed
-         */
-        public function getBPhotographie()
-        {
-            return $this->_B_photographie;
+
+        public function cout($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT cout FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo 'cout reussi' ;
+            }
         }
 
-        /**
-         * @return mixed
-         */
-        public function getDTempsDePreparation()
-        {
-            return $this->_D_temps_de_preparation;
+        public function description($nomRecette){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT description_prépa FROM RECETTE WHERE Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute([$nomRecette])){
+                echo 'description' ;
+            }
         }
 
-        /**
-         * @return mixed
-         */
-        public function getEDifficulte()
-        {
-            return $this->_E_difficulte;
-        }
 
-        /**
-         * @return mixed
-         */
-        public function getECout()
-        {
-            return $this->_E_cout;
-        }
 
-        /**
-         * @return mixed
-         */
-        public function getSTypeDeCuisson()
-        {
-            return $this->_S_type_de_cuisson;
-        }
 
-        /**
-         * @return mixed
-         */
-        public function getFNoteMoyenne()
-        {
-            return $this->_F_note_moyenne;
-        }
 
-        /**
-         * @return mixed
-         */
-        public function getSNom()
-        {
-            return $this->_S_nom;
-        }
+
+
+
 
     }
 

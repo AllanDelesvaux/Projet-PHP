@@ -8,7 +8,7 @@
 
                         <ul class="flex flex-row w-full justify-around ">
                             <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:hover:bg-black after:hover:w-full after:hover:transition   after:duration-500 "><a href="#">Menu</a></li>
-                            <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 "><a href="#">Recherche</a></li>
+                            <button class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 "><a href="#">Recherche</a></button>
                         </ul>
                 </div>
             <div class="w-auto">

@@ -41,18 +41,34 @@ class Administrateur extends Utilisateur
     public function supprimerRecette($nomRecette){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "DELETE FROM Recette where Nom_recette=".$nomRecette."\'";
+        $requete = "DELETE FROM Recette where Nom_recette=?";
         $O_statement = $connection->prepare($requete);
-        $O_statement->execute();
+        if($O_statement->execute([$nomRecette])){
+            echo '<p>  recette supprimé </p>' ;
+        }
     }
+
 
     public function supprimerUtilisateur($id){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "DELETE FROM Utilisateur where identifiant=".$id."\'";
+        echo  " identifiant requete ".$id;
+        $requete = "DELETE FROM Utilisateur where identifiant=?";
         $O_statement = $connection->prepare($requete);
-        $O_statement->execute();
+        if($O_statement->execute([$id])){
+            echo '<p> utilisateur identifiant: supprimé </p>' ;
+        }
 
+    }
+
+    public function supprimerAppreciationParId($_I_identifiant){
+        $connection = new ConnectionDatabase();
+        $connection = $connection->getConnection();
+        $S_requete = "DELETE FROM Appreciation WHERE identifiant=?";
+        $O_statement = $connection->prepare($S_requete);
+        if($O_statement->execute([$_I_identifiant])){
+            echo '<p> appreciation identifiant supprimé </p>' ;
+        }
     }
 
 

@@ -1,4 +1,31 @@
-<section class="bg-blueGray-50">
+<nav class="bg-blueGray-50">
+
+
+    <!--modal-->
+
+    <div class="relative z-10" id="principal">
+        <div class="hidden fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" id="elementFlou"></div>
+        <div class="hidden fixed inset-0 z-10 overflow-y-auto" id="modal">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 ">
+                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg bg-500-yellow">
+                    <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                        <button type="button" class="inline-flex w-full justify-center   px-4 py-2   sm:ml-3 sm:w-auto sm:text-sm" onclick="toggleModal">
+                            <img src="./assets/bx-x.svg" alt="quitter"/>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-center bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <img src="./assets/bx-search.svg" alt="recherche" class="px-4 py-2 rounded-md"/>
+                        <form action="/recette/afficherNomRecette" method="POST"> <!--wrapper -->
+                            <input class="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Recherche"/> <!--zone de recherche -->
+                            <button type="submit" class="w-5 bg-red-400">Valider</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------->
     <div class="container mx-auto overflow-hidden">
         <div class="flex items-center justify-between px-4 py-5 bg-blueGray-50">
                 <div class="flex  items-center  w-1/5   ">
@@ -6,10 +33,10 @@
                             <img src="/assets/cake.svg" alt="" class="h-14">
                         </a>
 
-                        <ul class="flex flex-row w-full justify-around ">
-                            <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:hover:bg-black after:hover:w-full after:hover:transition   after:duration-500 "><a href="#">Menu</a></li>
-                            <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 "><a href="#">Recherche</a></li>
-                        </ul>
+                        <section class="flex flex-row w-full justify-around ">
+                            <button class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:hover:bg-black after:hover:w-full after:hover:transition   after:duration-500 ">Menu</button>
+                            <button  onclick="toggleModal" class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 ">Recherche</button>
+                        </section>
                 </div>
             <div class="w-2/5">
                 <div class="flex items-center flex-row">
@@ -35,4 +62,6 @@
             </div>
         </div>
 
-</section>
+</nav>
+
+<script src="Vues/ScriptJS/modal.js"></script>
