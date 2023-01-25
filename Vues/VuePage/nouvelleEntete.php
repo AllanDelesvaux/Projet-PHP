@@ -1,4 +1,6 @@
+
 <section class="bg-blueGray-50">
+
     <div class="container mx-auto overflow-hidden">
         <div class="flex items-start justify-between px-4 py-5 bg-blueGray-50">
                 <div class="flex  items-center  w-1/5   ">
@@ -8,7 +10,7 @@
 
                         <ul class="flex flex-row w-full justify-around ">
                             <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:hover:bg-black after:hover:w-full after:hover:transition   after:duration-500 "><a href="#">Menu</a></li>
-                            <button class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 "><a href="#">Recherche</a></button>
+                            <li class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 "><a href="#">Recherche</a></li>
                         </ul>
                 </div>
             <div class="w-auto">
