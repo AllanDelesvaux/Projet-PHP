@@ -43,8 +43,8 @@
                 </div>
             <div class="w-2/5">
                 <div class="flex items-center flex-row">
-                   <div class="w-auto hidden lg:block">
-                       
+
+
                        <?php
                             if (!isset($_SESSION['suid']) ) {
                                 
@@ -60,11 +60,11 @@
 
         
 ?>
-                    </div>
+
                 </div>
             </div>
         </div>
-
++
 </nav>
 
 <script src="./Vues/ScriptJS/modal.js"></script>
