@@ -29,8 +29,8 @@
 
                 <div>
                     <label for="password-confirm" class="sr-only">Confirmer le Mot de Passe</label>
-                    <input id="password-confirm" name="password-confirm" type="password-confirm" autocomplete="current-password-confirm" required
-                           class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                    <input id="password-confirm" name="password-confirm" type="password" autocomplete="current-password" required
+                           class="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                            placeholder="password-confirm">
                 </div>
             </div>
@@ -46,13 +46,11 @@
                         Valider
                     </button>
 
-<?php
-    if($_SESSION["error"] == 1 ){
-        echo '<h3 style="color:#FF0000";>Login ou mot de passe éroné .</h3>';
-    }
-?>              
                 </div>
             </div>
+        <?php
+                echo '<h3 style="color:#FF0000";>'. $A_vue['error'] .'.</h3>';
+        ?>              
         </form>
     </div>
 </div>

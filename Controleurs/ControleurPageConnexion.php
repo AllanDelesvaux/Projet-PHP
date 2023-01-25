@@ -11,7 +11,8 @@ final class ControleurPageConnexion
     {
         $login = $_POST['email'];
         $password = $_POST['password'];
-        $user = new Utilisateur($login,$password);
+        $user = new Utilisateur();
+        $user->connect($login,$password);
         $errorMsg="Identifiant ou mot de passe inccorect";
         if (!(is_null($user->getId()))){
             if (!isset($_SESSION['suid'])) {
