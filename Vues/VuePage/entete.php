@@ -32,7 +32,7 @@
     <div class="container mx-auto overflow-hidden">
         <div class="flex items-center justify-between px-4 py-5 bg-blueGray-50">
                 <div class="flex  items-center  w-1/5   ">
-                        <a href="#">
+                        <a href="/">
                             <img src="/assets/cake.svg" alt="" class="h-14">
                         </a>
 
@@ -64,7 +64,6 @@
                 </div>
             </div>
         </div>
-+
 </nav>
 
 <script src="./Vues/ScriptJS/modal.js"></script>
