@@ -10,4 +10,11 @@ final class ControleurDefaut
         //Vue::montrer('VuePage/recette', array(''=>''));
     }
 
+
+    public function afficherImageAction(){
+        $recette = new Recette();
+        $recette->afficherNomRecetteAleatoire();
+        Vue::montrer('VuePage/principale');
+    }
+
 }
