@@ -7,8 +7,6 @@ class ControleurPageRecette
         $nom_recette= $_POST['search']; // changer l'id de l'attribut en id utilisateur
         echo "hello";
         echo $nom_recette;
-
-
     }
     public function afficherPhotoRecetteAction(){
 
