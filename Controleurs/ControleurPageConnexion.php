@@ -32,7 +32,7 @@ final class ControleurPageConnexion
                 $admin->setDerniereCo(date("Y-m-d"));
                 header('Location: /');
                 exit();
-            }
+            }            
             session_unset();
             Vue::montrer('VuePage/pageConnexion', array('error' => $errorMsg));
         }
