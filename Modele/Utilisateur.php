@@ -22,9 +22,30 @@ class Utilisateur{
       $this->_B_photo = $table->photo;
       $this->_S_nom_affichage = $table->nom;
       $this->_D_date_premiere_connexion = $table->date_premiere_connexion;
-      $this->_D_date_derniere_connexion = $table->date_derniere_connexion;
+      if (!(is_null($table->date_premiere_connexion))) {
+      $this->_D_date_premiere_connexion= date("Y-m-d");
+      
+      }
+        $this->_D_date_derniere_connexion = $table->date_derniere_connexion;
+    }
+    
+    function insertBDD($champs,$valeurs){
+      $O_conn = new ConnectionDatabase();
+      $O_conn = $O_conn->getConnection();
+      $_requete = "INSERT INTO Utilisateur (".$champs.") VALUES (". $valeurs.")";
+      $O_statement = $O_conn->prepare($_requete);
+      $O_statement->execute(); // FETCH_ASSOC
     }
 
+    function updateBDD($champ,$valeur){
+      $O_conn = new ConnectionDatabase();
+      $O_conn = $O_conn->getConnection();
+      $_requete = "UPDATE Utilisateur
+      SET ".$champ." = '".$valeur."'
+      WHERE identifiant = '".$this->_I_id."'";
+      $O_statement = $O_conn->prepare($_requete);
+      $O_statement->execute(); // FETCH_ASSOC
+    }
 
 	function getId() {
 		return $this->_I_id;
@@ -47,28 +68,34 @@ class Utilisateur{
 	}
 
    
-    function getDreniereCo() {
+    function getDeniereCo() {
 		return $this->_D_date_derniere_connexion;
 	}
 
     function setId($id) {
 		$this->_I_id=$id;
+    $this->updateBDD("identifiant",$this->_I_id);
 	}
 
     function setMdp($mdp) {
 		$this->_S_mot_de_passe = $mdp;
+    $this->updateBDD("mot_de_passe",$this->_S_mot_de_passe);
 	}
 
     function setPhoto($photo) {
 		$this->_B_photo = $photo;
+    $this->updateBDD("photo",$this->_B_photo);
 	}
 
     function setNom($nom) {
 		$this->_S_nom_affichage = $nom;
+    $this->updateBDD("nom",$this->_S_nom_affichage);
 	}
 
     function setDerniereCo($derniereCo){
-        $this->_D_date_derniere_connexion = $derniereCo;
+    $this->_D_date_derniere_connexion = $derniereCo;
+    $this->updateBDD("date_derniere_connexion", $this->_D_date_derniere_connexion);
     }
+
 
     }
