@@ -1,1 +1,0 @@
-<button type="button" class="inline-flex w-full justify-center   px-4 py-2   sm:ml-3 sm:w-auto sm:text-sm" onclick="toggleModal()">Recherche</button>
