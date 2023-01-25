@@ -2,7 +2,7 @@
 
     final class Recette{
 
-        private $_A_list_ingredients;
+        /*private $_A_list_ingredients;
         private $_A_list_ustensiles;
         private $_A_particularite;
         private $_A_appreciations;
@@ -29,7 +29,7 @@
             $this->_F_note_moyenne = $_F_note_moyenne;
             $this->_S_nom = $_S_nom;
 
-        }
+        }*/
 
         public function photoRecette($nomRecette){
             $connection = new ConnectionDatabase();
@@ -113,6 +113,29 @@
                 echo 'description' ;
             }
         }
+
+        public function afficherImageRecetteAleatoire(){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT photo FROM `Recette` ORDER BY rand() LIMIT 1 ";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute()){
+                echo 'photo aletoire reussi' ;
+            }
+
+        }
+
+        public function afficherNomRecetteAleatoire(){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT Nom_recette  FROM `Recette` ORDER BY rand() LIMIT 1 ";
+            $O_statement = $connection->prepare($requete);
+            if($O_statement->execute()){
+                echo 'nom aletoire reussi' ;
+            }
+
+        }
+
 
     }
 
