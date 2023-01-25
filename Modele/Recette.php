@@ -37,7 +37,7 @@
             $requete = "SELECT photo FROM RECETTE WHERE Nom_recette=?";
             $O_statement = $connection->prepare($requete);
             if($O_statement->execute([$nomRecette])){
-                echo 'photoRecetteReussi' ;
+                echo 'photoRecetteReussie' ;
             }
         }
 
@@ -47,7 +47,7 @@
             $requete = "SELECT noteMoyenne FROM RECETTE WHERE Nom_recette=?";
             $O_statement = $connection->prepare($requete);
             if($O_statement->execute([$nomRecette])){
-                echo 'noteMoyenne reussi';
+                echo 'noteMoyenne reussie';
             }
         }
 
@@ -72,13 +72,13 @@
             }
         }*/
 
-        public function tempDePreparation($nomRecette){
+        public function tempsDePreparation($nomRecette){
             $connection = new ConnectionDatabase();
             $connection = $connection->getConnection();
             $requete = "SELECT temps_de_preparation FROM RECETTE WHERE Nom_recette=?";
             $O_statement = $connection->prepare($requete);
             if($O_statement->execute([$nomRecette])){
-                echo 'temp de prepa reussi' ;
+                echo 'temps de preparation reussi' ;
             }
         }
 
@@ -113,14 +113,6 @@
                 echo 'description' ;
             }
         }
-
-
-
-
-
-
-
-
 
     }
 
