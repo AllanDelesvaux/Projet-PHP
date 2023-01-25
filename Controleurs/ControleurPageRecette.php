@@ -5,10 +5,16 @@ class ControleurPageRecette
 
     public function afficherNomRecetteAction(array $A_parametres = null, array $A_postParams = null){
         $nom_recette= $_POST['search']; // changer l'id de l'attribut en id utilisateur
-        echo "hello";
+        $recherche = new Recherche();
+        $resultatsRecherche = $recherche->rechercheParNom($nom_recette);
+        if(!(empty($resultatsRecherche))){
+            echo 'Vide'; //à changer
+        }else{
+            for ($i = 0; $i < sizeof($resultatsRecherche); ++$i) {
+                Vue::montrer('VuePage/recette', array('nomRecette' => $resultatsRecherche[$i]->));
+            }
+        }
         echo $nom_recette;
-
-
     }
     public function afficherPhotoRecetteAction(){
 

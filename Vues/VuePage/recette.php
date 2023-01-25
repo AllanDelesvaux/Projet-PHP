@@ -5,8 +5,7 @@
                 <div class="text-center">
                     <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
                         <br class="hidden lg:block">
-                        Nom Recette(text dynamique selon la recette)
-
+                        <?php $A_vue['nomRecette'] ?>
                     </h1>
                 </div>
             </div>
@@ -21,6 +20,8 @@
                     <div class="relative w-full max-w-lg">
                         <div class="absolute top-0 rounded-full bg-violet-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                         <div class="relative">
+                            <!-- vue image -->
+
                             <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero"
                                  src="./assets/brooke-lark-08bOYnH_r_E-unsplash.jpg">
                         </div>

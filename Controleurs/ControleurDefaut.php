@@ -6,7 +6,6 @@ final class ControleurDefaut
     {
         Vue::montrer('VuePage/principaleHaut');
         Vue::montrer('VuePage/principale');
-        Vue::montrer('VuePage/recette');
         //Vue::montrer('VuePage/recette', array(''=>''));
         //Vue::montrer('VuePage/recette', array(''=>''));
     }
