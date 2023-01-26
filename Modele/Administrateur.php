@@ -48,7 +48,7 @@ class Administrateur extends Utilisateur
         $connection = $connection->getConnection();
         $requete = "DELETE FROM Recette where Nom_recette=?";
         $O_statement = $connection->prepare($requete);
-        if($O_statement->execute([$nomRecette])){
+        if($O_statement->execute(array($nomRecette))){
             echo '<p>  recette supprimé </p>' ;
         }
     }
@@ -57,11 +57,12 @@ class Administrateur extends Utilisateur
     public function supprimerUtilisateur($id){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        echo  " identifiant requete ".$id;
         $requete = "DELETE FROM Utilisateur where identifiant=?";
         $O_statement = $connection->prepare($requete);
-        if($O_statement->execute([$id])){
-            echo '<p> utilisateur identifiant: supprimé </p>' ;
+        if($O_statement->execute(array($id))){
+            echo '<script>
+                alert("Utilisateur supprimé" );
+                </script>' ;
         }
 
     }
@@ -71,8 +72,10 @@ class Administrateur extends Utilisateur
         $connection = $connection->getConnection();
         $S_requete = "DELETE FROM Appreciation WHERE identifiant=?";
         $O_statement = $connection->prepare($S_requete);
-        if($O_statement->execute([$_I_identifiant])){
-            echo '<p> appreciation identifiant supprimé </p>' ;
+        if($O_statement->execute(array($_I_identifiant))){
+            echo '<script>
+                alert("Appreciation supprimé" );
+                </script>' ;
         }
     }
     

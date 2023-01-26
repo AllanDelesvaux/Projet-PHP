@@ -15,10 +15,9 @@ final class ControleurDefaut
         $recette = new Recette();
         $recette->afficherRecetteAleatoire();
         foreach ($recette->afficherRecetteAleatoire() as $element){
-            Vue::montrer('VuePage/principale', array('photo'=> $element->photo,'nomRecetteAleatoire' => $element->Nom_recette,'description' => $element->description_prépa ));
-
-
+           Vue::montrer('VuePage/principale', array('photo'=> $element->photo,'nomRecetteAleatoire' => $element->Nom_recette,'description' => $element->description_prépa ));
         }
+
     }
 
 }

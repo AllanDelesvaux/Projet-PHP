@@ -3,9 +3,15 @@
 class ControleurPageAdministration
 {
 
+    public function defautAction()
+    {
+        Vue::montrer('VuePage/pageAdministration');
+
+    }
+
 
     public function supprimerUtilisateurAction(array $A_parametres = null, array $A_postParams = null){
-        $identifiant = $_POST['search']; // changer l'id de l'attribut en id utilisateur
+        $identifiant = $_POST['utilisateurAsupprimer'];
         $administrateur = new Administrateur('KingTitou','jesuisleboss123456');
         $administrateur->supprimerUtilisateur($identifiant);
         Vue::montrer('VuePage/pageAdministration');

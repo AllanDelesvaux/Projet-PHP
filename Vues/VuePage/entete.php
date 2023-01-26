@@ -1,8 +1,7 @@
-<nav class="bg-blueGray-50">
+<nav class="bg-blueGray-50 dark:bg-amber-700">
 
 
     <!--modal-->
-
     <div class="relative z-10" id="principal">
         <div class="hidden fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" id="elementFlou"></div>
         <div class="hidden fixed inset-0 z-10 overflow-y-auto" id="modal">
@@ -29,7 +28,7 @@
     </div>
 
     <!---------------->
-    <div class="container mx-auto overflow-hidden">
+    <div class="container mx-auto overflow-hidden dark:bg-amber-700">
         <div class="flex items-center justify-between px-4 py-5 bg-blueGray-50">
                 <div class="flex  items-center  w-1/5   ">
                         <a href="/">
