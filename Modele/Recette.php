@@ -2,7 +2,7 @@
 
     final class Recette{
 
-        private $_A_list_ingredients;
+        /*private $_A_list_ingredients;
         private $_A_list_ustensiles;
         private $_A_particularite;
         private $_A_appreciations;
@@ -29,7 +29,7 @@
             $this->_F_note_moyenne = $_F_note_moyenne;
             $this->_S_nom = $_S_nom;
 
-        }
+        }*/
 
 
         public function photoRecette($nomRecette){
