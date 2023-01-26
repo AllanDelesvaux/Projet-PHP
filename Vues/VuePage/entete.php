@@ -16,7 +16,7 @@
 
                         <div class="flex items-center justify-center bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                             <img src="./assets/bx-search.svg" alt="recherche" class="px-4 py-2 rounded-md"/>
-                            <form action="/pageRecette/afficherNomRecette" method="POST"> <!--wrapper -->
+                            <form action="/Recherche" method="POST"> <!--wrapper -->
                             <input class="border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Recherche"/> <!--zone de recherche -->
                                 <button type="submit" class=" font-medium after:block after:content['']  after:h-1 after:w-0 after:bg-black hover:after:w-full hover:after:transition after:duration-500 ">Valider</button>
                             </form>

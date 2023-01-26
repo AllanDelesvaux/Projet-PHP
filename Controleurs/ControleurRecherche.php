@@ -1,24 +1,21 @@
 <?php
 
-class ControleurPageRecette
+class ControleurRecherche
 {
     public function defautAction()
     {
-        Vue::montrer('/VuePage/recette');
+        $nom_recette= $_POST['search']; // changer l'id de l'attribut en id utilisateur
+        $recherche = new Recherche();
+        $resultatsRecherche = $recherche->rechercheParNom($nom_recette);
+        Vue::montrer('/VuePage/resultatRecherche', array('resultats'=>$resultatsRecherche));
     }
 
-    public function afficherNomRecetteAction(array $A_parametres = null, array $A_postParams = null){
+    public function afficherResultatsAction(array $A_parametres = null, array $A_postParams = null){
         $nom_recette= $_POST['search']; // changer l'id de l'attribut en id utilisateur
         $recherche = new Recherche();
         $resultatsRecherche = $recherche->rechercheParNom($nom_recette);
 
-        if((empty($resultatsRecherche))){
-            Vue::montrer('/VuePage/vide');
-        }else{
-            for ($i = 0; $i < sizeof($resultatsRecherche); ++$i) {
-                Vue::montrer('/Composant/epingleRecette', array('photo' => $resultatsRecherche[$i]->photo, 'nomRecetteAleatoire' => $resultatsRecherche[$i]->Nom_recette, 'note' => $resultatsRecherche[$i]->note_moyenne, 'tempsPrepa' => $resultatsRecherche[$i]->temps_de_preparation));
-            }
-        }
+        
         //echo $nom_recette;
     }
     public function afficherPhotoRecetteAction(){

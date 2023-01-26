@@ -125,7 +125,7 @@
 
         }
 
-        /*public function afficherNomRecetteAleatoire(){
+        /*public function afficherResultatsAleatoire(){
             $connection = new ConnectionDatabase();
             $connection = $connection->getConnection();
             $requete = "SELECT *  FROM `Recette` ORDER BY rand() LIMIT 1 ";

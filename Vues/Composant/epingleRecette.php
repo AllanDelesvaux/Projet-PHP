@@ -1,4 +1,4 @@
-<div>
+<div class="">
     <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
          src="<?php echo $A_vue['photo']; ?>"
          alt=""> <!--photo envoyez par le controleur -->
