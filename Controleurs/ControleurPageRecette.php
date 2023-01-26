@@ -13,7 +13,7 @@ class ControleurPageRecette
         $resultatsRecherche = $recherche->rechercheParNom($nom_recette);
 
         if((empty($resultatsRecherche))){
-            Vue::montrer('VuePage/Vide');
+            Vue::montrer('VuePage/vide');
         }else{
             for ($i = 0; $i < sizeof($resultatsRecherche); ++$i) {
                 Vue::montrer('VuePage/recette', array('nomRecette' => $resultatsRecherche[$i]->Nom_recette, 'note' => $resultatsRecherche[$i]->note_moyenne, 'tempsPrepa' => $resultatsRecherche[$i]->temps_de_preparation,'cout' => $resultatsRecherche[$i]->cout, 'difficulte' => $resultatsRecherche[$i]->difficulte,'description' => $resultatsRecherche[$i]->description_prépa));
