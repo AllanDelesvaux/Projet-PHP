@@ -45,7 +45,7 @@ final class ControleurPageInscription
                     }
                     
                     //Verifie si la taille du fichier n'est pas trop grande
-                    if ($_FILES["photo"]["size"] > 500000) {
+                    if ($_FILES["photo"]["size"] > 200000) {
                         $errorMsg="Fichier trop volumineux";
                         $uploadOk = 0;
                     }
