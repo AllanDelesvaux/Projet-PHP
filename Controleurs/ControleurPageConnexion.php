@@ -11,15 +11,15 @@ final class ControleurPageConnexion
     {
         $login = $_POST['email'];
         $password = $_POST['password'];
-        $user = new Utilisateur();
-        $user->connect($login,$password);
+        $utilisateur = new Utilisateur();
+        $utilisateur->connect($login,$password);
         $errorMsg="Identifiant ou mot de passe inccorect";
-        if (!(is_null($user->getId()))){
+        if (!(is_null($utilisateur->getId()))){
             if (!isset($_SESSION['suid'])) {
-                $_SESSION['suid'] = $user;
+                $_SESSION['suid'] = $utilisateur;
                 $_SESSION['isAdmin'] = false;
             }
-            $user->setDerniereCo(date("Y-m-d"));
+            $utilisateur->setDerniereCo(date("Y-m-d"));
             header('Location: /');
             exit();
         } else {

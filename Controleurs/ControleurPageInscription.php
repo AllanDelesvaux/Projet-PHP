@@ -9,8 +9,8 @@ final class ControleurPageInscription
 
     public function inscriptionAction(array $A_parametres = null, array $A_postParams = null)
     {
-        $_username = $_POST['Nom'];
-        $_login = $_POST['email'];
+        $nom = $_POST['Nom'];
+        $email = $_POST['email'];
         $_password = $_POST['password'];
         $_password_confirm = $_POST['password-confirm'];
         
@@ -20,8 +20,8 @@ final class ControleurPageInscription
             Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
         }
         else{
-            $user = new Utilisateur();
-            if ($user->isExisting($_login)){
+            $utilisateur = new Utilisateur();
+            if ($utilisateur->isExisting($email)){
                 $errorMsg="Un compte existe déjà avec cet e-mail";
                 session_unset();
                 Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
@@ -62,7 +62,7 @@ final class ControleurPageInscription
                         // if everything is ok, try to upload file
                     } else {
                         if (move_uploaded_file($_FILES["photo"]["tmp_name"], SITE_ROOT.$target_file)){
-                            $user->setPhoto($target_file);
+                            $utilisateur->setPhoto($target_file);
                         } else {
                             $errorMsg="Désolé une erreur s'est produite avec votre fichier";
                             session_unset();
@@ -71,18 +71,18 @@ final class ControleurPageInscription
                     }
                 }
                 else{
-                    $user->setPhoto('/assets/profile_pics/profil.png');
+                    $utilisateur->setPhoto('/assets/profile_pics/profil.png');
                 }
 
-                $user->getPhoto();
-                $user->setId($_login);
-                $user->setPremiereCo();
-                $user->insertBDD("identifiant , photo, date_premiere_connexion" , "'".$user->getId()."' , '".$user->getPhoto()."' , '".$user->getPremiereCo()."'");
+                $utilisateur->getPhoto();
+                $utilisateur->setId($email);
+                $utilisateur->setPremiereCo();
+                $utilisateur->insertBDD("identifiant , photo, date_premiere_connexion" , "'".$utilisateur->getId()."' , '".$utilisateur->getPhoto()."' , '".$utilisateur->getPremiereCo()."'");
                 //'identifiant	, mot_de_passe , photo , nom , date_premiere_connexion , date_derniere_connexion'
-                $user->setMdp($_password);
-                $user->setNom($_username);
-                $user->setDerniereCo(date("Y-m-d"));
-                $_SESSION['suid'] = $user;
+                $utilisateur->setMdp($_password);
+                $utilisateur->setNom($nom);
+                $utilisateur->setDerniereCo(date("Y-m-d"));
+                $_SESSION['suid'] = $utilisateur;
                 $_SESSION['isAdmin'] = false;
                 header('Location: /');
                 exit();

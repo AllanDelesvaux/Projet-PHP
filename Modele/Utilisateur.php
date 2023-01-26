@@ -35,13 +35,13 @@ class Utilisateur{
         $O_statement = $O_conn->prepare($_requete);
         $O_statement->execute(); // FETCH_ASSOC
         $result = $O_statement->fetchAll(PDO::FETCH_OBJ);
-        $table = $result[0];
-        $this->_I_id = $table->identifiant;
-        $this->_S_mot_de_passe = $table->mot_de_passe;
-        $this->_B_photo = $table->photo;
-        $this->_S_nom_affichage = $table->nom;
-        $this->_D_date_premiere_connexion = $table->date_premiere_connexion;
-        $this->_D_date_derniere_connexion = $table->date_derniere_connexion;
+        $donnee = $result[0];
+        $this->_I_id = $donnee->identifiant;
+        $this->_S_mot_de_passe = $donnee->mot_de_passe;
+        $this->_B_photo = $donnee->photo;
+        $this->_S_nom_affichage = $donnee->nom;
+        $this->_D_date_premiere_connexion = $donnee->date_premiere_connexion;
+        $this->_D_date_derniere_connexion = $donnee->date_derniere_connexion;
     }
   
     function insertBDD($champs,$valeurs){
