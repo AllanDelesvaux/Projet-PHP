@@ -89,7 +89,6 @@ class Utilisateur{
 
     function setId($id) {
 		$this->_I_id=$id;
-    $this->updateBDD("identifiant",$this->_I_id);
 	}
 
     function setMdp($mdp) {
@@ -116,7 +115,6 @@ class Utilisateur{
       if($this->premiere_connexion){
         $this->premiere_connexion = false;
         $this->_D_date_premiere_connexion= date("Y-m-d");
-        $this->updateBDD("date_derniere_connexion", $this->_D_date_premiere_connexion);
       }
       }
 

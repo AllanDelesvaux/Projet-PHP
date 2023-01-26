@@ -13,7 +13,7 @@ final class ControleurPageInscription
         $_login = $_POST['email'];
         $_password = $_POST['password'];
         $_password_confirm = $_POST['password-confirm'];
-
+        
         if($_password != $_password_confirm){
             $errorMsg="Mot de passe et confirmation de mot de passe non-identique";
             session_unset();
@@ -27,10 +27,58 @@ final class ControleurPageInscription
                 Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
             }
             else{
+                if(is_null($_FILES['photo']))
+                {
+                    $target_dir = "/assets/";
+                    $target_file = $target_dir . basename($_FILES['photo']["name"]);
+                    
+                    $uploadOk = 1;
+                    
+                    // Verifie si l'image est bien une image et non un fake
+                    if(isset($_POST["submit"])) {
+                        $check = getimagesize($_FILES["photo"]["tmp_name"]);
+                        if($check !== false) {
+                            $uploadOk = 1;
+                        } else {
+                            $errorMsg="Le fichier n'est pas une image";
+                            $uploadOk = 0;
+                        }
+                    }
+                    
+                    //Verifie si la taille du fichier n'est pas trop grande
+                    if ($_FILES["photo"]["size"] > 500000) {
+                        $errorMsg="Fichier trop volumineux";
+                        $uploadOk = 0;
+                    }
+                    
+                    // Check if file already exists
+                    if (file_exists($target_file)) {
+                        $errorMsg="Choississez un autre nom pour votre photo car elle existe déja";
+                        $uploadOk = 0;
+                    }   
+                    
+                    if ($uploadOk == 0) {
+                        Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
+                        exit();
+                        // if everything is ok, try to upload file
+                    } else {
+                        if (move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file)){
+                            $user->setPhoto('/assets/'.$_FILES["photo"]["name"]);
+                        } else {
+                            $errorMsg="Désolé une erreur s'est produite avec votre fichier";
+                            Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
+                            exit();
+                        }
+                    }
+                }
+                else{
+                    $user->setPhoto('/assets/profil.png');
+                }
+                
+
                 $user->setId($_login);
-                echo 'toto';
                 $user->setPremiereCo();
-                $user->insertBDD("identifiant , date_premiere_connexion" , "'".$_login."' , '".$user->getPremiereCo()."'");
+                $user->insertBDD("identifiant , photo, date_premiere_connexion" , "'".$user->getId()."' , '".$user->getPhoto()."' , '".$user->getPremiereCo()."'");
                 //'identifiant	, mot_de_passe , photo , nom , date_premiere_connexion , date_derniere_connexion'
                 $user->setMdp($_password);
                 $user->setNom($_username);
