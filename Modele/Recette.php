@@ -4,6 +4,7 @@
 
         private $_A_list_ingredients;
         private $_A_list_ustensiles;
+        private $_A_particularite;
         private $_A_appreciations;
         private $_B_photographie;
         private $_D_temps_de_preparation;
@@ -14,39 +15,19 @@
         private $_S_nom;
 
 
-        function __construct($nomRecette){
+        function __construct($_A_list_ingredients, $_A_list_ustensiles, $_A_particularite, $_A_appreciations, $_B_photographie, $_D_temps_de_preparation, $_E_difficulte, $_E_cout, $_S_type_de_cuisson, $_F_note_moyenne, $_S_nom){
 
-
-            $result = array();
-            $O_conn = new ConnectionDatabase();
-            $O_conn = $O_conn->getConnection();
-            $_requete = "SELECT * from Recette where Nom_recette = '" .$nomRecette."'";
-            $O_statement = $O_conn->prepare($_requete);
-            $O_statement->execute(); // FETCH_ASSOC
-            $result = $O_statement->fetchAll(PDO::FETCH_OBJ);
-            $donnee = $result[0];
-            $this->_S_nom = $donnee->Nom_recette;
-            $this->_F_note_moyenne = $donnee->note_moyenne;
-            $this->_B_photographie = $donnee->photo;
-            $this->_D_temps_de_preparation = $donnee->temp_de_preparation;
-            $this->_S_type_de_cuisson = $donnee->description_prepa;
-            $this->_E_cout = $donnee->cout;
-            $this->_E_difficulte = $donnee->difficulte;
-            $this->_A_list_ingredients = new Ingredient($donnee->ingredients);
-            $this->_A_list_ustensiles = new Ustensile($donnee->ustensiles);
-
-            $appre = array();
-            $O_conn = new ConnectionDatabase();
-            $O_conn = $O_conn->getConnection();
-            $_requete = "SELECT * from Appreciation where Nom_recette = '" .$donnee->Nom_recette."'";
-            $O_statement = $O_conn->prepare($_requete);
-            $O_statement->execute(); // FETCH_ASSOC
-            $appre = $O_statement->fetchAll(PDO::FETCH_OBJ);
-            $this->_A_appreciations = array();
-            foreach($appre as $unique){
-                $tmp = new Appreciation($unique->Id_identifiant, $unique->note, $unique->date_appreciation, $unique->commentaire);
-                array_push($this->_A_appreciations, $tmp);
-            }
+            $this->_A_list_ingredients = $_A_list_ingredients;
+            $this->_A_list_ustensiles = $_A_list_ustensiles;
+            $this->_A_particularite = $_A_particularite;
+            $this->_A_appreciations = $_A_appreciations;
+            $this->_B_photographie = $_B_photographie;
+            $this->_D_temps_de_preparation = $_D_temps_de_preparation;
+            $this->_E_difficulte = $_E_difficulte;
+            $this->_E_cout = $_E_cout;
+            $this->_S_type_de_cuisson = $_S_type_de_cuisson;
+            $this->_F_note_moyenne = $_F_note_moyenne;
+            $this->_S_nom = $_S_nom;
 
         }
 
