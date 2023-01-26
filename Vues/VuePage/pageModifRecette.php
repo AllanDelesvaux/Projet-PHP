@@ -36,7 +36,7 @@
                         Modifier !
                     </button>
             </form>
-                    <?php Vue::montrer('Composant/boutonRecette', array('action' => '/AjoutRecette', 'valeur' => 'Ajouter une recette')); ?>
+                    <?php //Vue::montrer('Composant/boutonRecette', array('action' => '/AjoutRecette', 'valeur' => 'Ajouter une recette')); ?>
                 </div>
             </form>
         </div>
