@@ -1,3 +1,10 @@
+<?php if( !isset($_SESSION['isAdmin']) ||   !$_SESSION['isAdmin'])
+{
+    $msgErreur = 'Vous n\'avez pas les droits pour accéder à cette page';
+    Vue::montrer('VuePage/pageErreur', array('msgErreur' => $msgErreur));
+} else {
+    echo '
+
 
 <!-- component -->
 <div class="w-full bg-gray-800 h-screen">
@@ -15,29 +22,29 @@
             <form action="/modifRecette/confirmation" method="post">
                 <div class="md:flex items-center mt-12">
                     <div class="w-full md:w-1/2 flex flex-col">
-                        <label class="font-semibold leading-none text-gray-300">Nom Recette <?php echo $A_vue['erreur']?> </label>
+                        <label class="font-semibold leading-none text-gray-300">Nom Recette <?php echo $A_vue[\'erreur\']?> </label>
                         
-                        <input name='nomRecette' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
+                        <input name=\'nomRecette\' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
                     </div>
                     <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
                         <label class="font-semibold leading-none text-gray-300">Temps de préparation</label>
-                        <input name='temps' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded"/>
+                        <input name=\'temps\' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded"/>
                     </div>
                 </div>
                 <div class="md:flex items-center mt-12">
                     <div class="w-full md:w-1/2 flex flex-col">
                         <label class="font-semibold leading-none text-gray-300">Coût</label>
-                        <input name='cout' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
+                        <input name=\'cout\' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
                     </div>
                     <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
                         <label class="font-semibold leading-none text-gray-300">Difficulté</label>
-                        <input name='difficulte' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded"/>
+                        <input name=\'difficulte\' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded"/>
                     </div>
                 </div>
                 <div>
                     <div class="w-full flex flex-col mt-8">
                         <label class="font-semibold leading-none text-gray-300">Description/Préparation</label>
-                        <textarea name='description' type="text" class="h-40 text-base leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-800 border-0 rounded"></textarea>
+                        <textarea name=\'description\' type="text" class="h-40 text-base leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-800 border-0 rounded"></textarea>
                     </div>
                 </div>
                 <div class="flex items-center justify-center w-full">
@@ -45,10 +52,13 @@
                         Modifier !
                     </button>
                 </div>
-            </form>
-                    <?php //Vue::montrer('Composant/boutonRecette', array('action' => '/AjoutRecette', 'valeur' => 'Ajouter une recette')); ?>
+            </form>';
+                    //Vue::montrer('Composant/boutonRecette', array('action' => '/AjoutRecette', 'valeur' => 'Ajouter une recette'));
+                echo'
                 </div>
             </form>
         </div>
     </div>
 </div>
+';
+}?>

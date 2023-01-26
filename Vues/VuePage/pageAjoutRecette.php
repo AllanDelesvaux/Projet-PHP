@@ -1,3 +1,10 @@
+<?php if( !isset($_SESSION['isAdmin']) ||   !$_SESSION['isAdmin'])
+{
+    $msgErreur = 'Vous n\'avez pas les droits pour accéder à cette page';
+    Vue::montrer('VuePage/pageErreur', array('msgErreur' => $msgErreur));
+} else {
+    echo '
+
 <!-- component -->
 <div class="w-full bg-gray-800 h-screen">
     <div class="bg-gradient-to-b from-blue-800 to-blue-600 h-96"></div>
@@ -42,9 +49,13 @@
                     <button type=submit class="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded md:ml-6 hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none" >
                         Créer ! 
                     </button>
-            </form>
-                    <?php Vue::montrer('Composant/boutonRecette', array('action' => '/ModifRecette', 'valeur' => 'Modifier une recette')); ?>
+            </form> ';
+                    Vue::montrer('Composant/boutonRecette', array('action' => '/ModifRecette', 'valeur' => 'Modifier une recette'));
+                    echo'
             </div>
         </div>
     </div>
 </div>
+            ';
+}
+?>
