@@ -47,11 +47,11 @@
             <div class="flex items-center justify-between">
                 <div class="text-sm flex items-start">
                     <p> Vous avez déja un compte ?  <p>
-                    <a href="/pageConnexion" class="font-medium text-indigo-600 hover:text-indigo-500"> Cliquez ici</a>
+                    <a href="/pageConnexion" class="font-medium text-[#C87B00] hover:text-amber-600"> Cliquez ici</a>
                 </div>
 
                 <div>
-                    <button type="submit" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <button type="submit" class="group relative flex w-full justify-center rounded-md border border-transparent bg-[#C87B00] py-2 px-4 text-sm font-medium text-white hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                         Valider
                     </button>
 

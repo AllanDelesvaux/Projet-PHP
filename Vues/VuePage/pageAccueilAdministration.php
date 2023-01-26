@@ -9,7 +9,7 @@
             <div class ="flex flex-row items-center justify-center">    
                 <section class="py-3">
                     <div class="container px-4 mx-auto">
-                        <div class="relative p-6 text-center bg-gray-500 rounded-xl">
+                        <div class="relative p-6 text-center bg-[#51350D] rounded-xl">
                             <h4 class="text-xl text-white font-bold mb-3">Modification</h4>
                             <p class="text-gray-300 mb-3">Ici, vous pourrez modifier les recettes déjà existantes.</p>
                             <div class="flex flex-wrap items-center -mx-2">
@@ -22,7 +22,7 @@
                 </section>
                 <section class="py-3">
                 <div class="container px-4 mx-auto">
-                    <div class="relative p-6 text-center bg-gray-500 rounded-xl">
+                    <div class="relative p-6 text-center bg-[#51350D] rounded-xl">
                         <h4 class="text-xl text-white font-bold mb-3">Ajout</h4>
                         <p class="text-gray-300 mb-3">Créez vos propres recettes et ajoutez les à la base de donnée.</p>
                         <div class="flex flex-wrap items-center -mx-2">
@@ -37,7 +37,7 @@
             <div class ="flex flex-row items-center justify-center">    
                 <section class="py-3">
                     <div class="container px-4 mx-auto">
-                        <div class="relative p-6 text-center bg-gray-500 rounded-xl">
+                        <div class="relative p-6 text-center bg-[#51350D] rounded-xl">
                             <h4 class="text-xl text-white font-bold mb-3">Administration</h4>
                             <p class="text-gray-300 mb-3">Supprimer des utilisateurs, ou appréciations.</p>
                             <div class="flex flex-wrap items-center -mx-2">

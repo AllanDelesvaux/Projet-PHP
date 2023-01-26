@@ -89,7 +89,7 @@
                             Farine
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                        Frit
+                         Four
 	
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
@@ -329,27 +329,6 @@
                      </tr>
 
                      <tr>
-                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                     Chocolat noir
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                        Frigo
-	
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                        
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                         
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                        
-                           </a>
-                        </td>
-                     </tr>
 
                      <tr>
                      <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
@@ -360,7 +339,7 @@
 	
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-
+                        Frit
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
                           
@@ -625,7 +604,7 @@
                      Pralin
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           
+                        Frigo
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                       
