@@ -4,7 +4,7 @@
     <?php 
         echo "<div class='font-semibold'> ". $_SESSION['suid']->getNom()." </div>";
         if($_SESSION['isAdmin']){
-          echo "<a href='/PageAdministration' > <span class ='text-gray-200'>Administrateur</span></a>";
+        echo "<a href='/pageAccueilAdmin' > <span class ='text-gray-200'>Administrateur</span></a>";
         }
         else{
           echo "<span class ='text-gray'>Utilisateur</span>";
