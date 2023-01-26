@@ -3,5 +3,4 @@
     <input class="bg-white shadow-xl w-40 h-5 pl-2 pr-8 rounded-lg text-sm focus:outline-none " type="search" name="search"  placeholder="Recherche"/>
 </div>'
 
-
 ?>
