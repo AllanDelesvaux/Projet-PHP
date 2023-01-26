@@ -15,6 +15,7 @@ final class ControleurModifRecette
         $difficulte = (!empty($_POST['difficulte'])) ?$_POST['difficulte'] : null;
         $description = (!empty($_POST['description'])) ?$_POST['description'] : null;
         $admin = new Administrateur();
+        $admin->connect('KingTitou','jesuisleboss123456');
         $search = new Recherche();
         if(!empty($search->rechercheParNom($nomRecette))){
             $admin->modifierRecette($nomRecette,$temps,$description,$cout,$difficulte);
