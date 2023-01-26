@@ -71,17 +71,12 @@ class Administrateur extends Utilisateur
         $O_statement->execute(); // FETCH_ASSOC
       }
 
-    public function modifierRecette($NomRecette,$tempsDePreparation,$descriptionPrepa,$cout,$difficulte){
+    public function modifierRecette($nom_recette,$champ,$valeur){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "UPDATE Recette SET temps_de_preparation='".$tempsDePreparation."', description_prepa='".$descriptionPrepa."', cout='".$cout."', difficulte ='".$difficulte."' WHERE Nom_recette ='".$NomRecette."'";
+        $requete = "UPDATE Recette SET ".$champ." = '".$valeur."' where Nom_recette='".$nom_recette."'";
         $O_statement = $connection->prepare($requete);
-        if($O_statement->execute()){
-            echo "recette modifiée";
-        }
-        else{
-            echo "ca marche pas";
-        }
+        return $O_statement->execute();
     }
 
 
