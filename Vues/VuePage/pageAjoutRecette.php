@@ -8,31 +8,31 @@
                 <div class="md:flex items-center mt-12">
                     <div class="w-full md:w-1/2 flex flex-col">
                         <label class="font-semibold leading-none text-gray-300">Nom Recette</label>
-                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
+                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" required="required" />
                     </div>
                     <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
                         <label class="font-semibold leading-none text-gray-300">Temps de préparation</label>
-                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded"/>
+                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" required="required"/>
                      </div>
                 </div>
                 <div class="md:flex items-center mt-12">
                     <div class="w-full md:w-1/2 flex flex-col">
                         <label class="font-semibold leading-none text-gray-300">Coût</label>
-                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
+                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" required="required"/>
                     </div>
                     <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
                         <label class="font-semibold leading-none text-gray-300">Difficulté</label>
-                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded"/>
+                        <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded " required="required"/>
                     </div>
                 </div>
                 <div>
                     <div class="w-full flex flex-col mt-8">
                         <label class="font-semibold leading-none text-gray-300">Description/Préparation</label>
-                        <textarea type="text" class="h-40 text-base leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-800 border-0 rounded"></textarea>
+                        <textarea type="text" class="h-40 text-base leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-800 border-0 rounded" required="required"></textarea>
                     </div>
                 </div>
                 <div class="flex items-center justify-center w-full">
-                    <button class="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded md:ml-6 hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none">
+                    <button type=submit class="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded md:ml-6 hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none" >
                         Créer ! 
                     </button>
             </form>
