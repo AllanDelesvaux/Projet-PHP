@@ -27,10 +27,9 @@ final class ControleurPageInscription
                 Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
             }
             else{
-                if(is_null($_FILES['photo']))
+                if(!$_FILES['photo']['name'] == "")
                 {
-                    $target_dir = "/assets/";
-                    $target_file = $target_dir . basename($_FILES['photo']["name"]);
+                    $target_file = '/assets/'.time().'_'.basename($_FILES['photo']["name"]);
                     
                     $uploadOk = 1;
                     
@@ -51,8 +50,8 @@ final class ControleurPageInscription
                         $uploadOk = 0;
                     }
                     
-                    // Check if file already exists
-                    if (file_exists($target_file)) {
+                    //Check if file already exists
+                    if (file_exists(SITE_ROOT.$target_file)) {
                         $errorMsg="Choississez un autre nom pour votre photo car elle existe déja";
                         $uploadOk = 0;
                     }   
@@ -62,20 +61,20 @@ final class ControleurPageInscription
                         exit();
                         // if everything is ok, try to upload file
                     } else {
-                        if (move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file)){
-                            $user->setPhoto('/assets/'.$_FILES["photo"]["name"]);
+                        if (move_uploaded_file($_FILES["photo"]["tmp_name"], SITE_ROOT.$target_file)){
+                            $user->setPhoto($target_file);
                         } else {
                             $errorMsg="Désolé une erreur s'est produite avec votre fichier";
-                            Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
-                            exit();
+                            session_unset();
+                            Vue::montrer('pageInscription', array('error' => $errorMsg));
                         }
                     }
                 }
                 else{
                     $user->setPhoto('/assets/profil.png');
                 }
-                
 
+                $user->getPhoto();
                 $user->setId($_login);
                 $user->setPremiereCo();
                 $user->insertBDD("identifiant , photo, date_premiere_connexion" , "'".$user->getId()."' , '".$user->getPhoto()."' , '".$user->getPremiereCo()."'");

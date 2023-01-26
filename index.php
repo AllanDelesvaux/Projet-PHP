@@ -19,6 +19,8 @@
 */
     session_start();
     
+    define ('SITE_ROOT', realpath(dirname(__FILE__)));
+
     $S_urlADecortiquer = isset($_GET['url']) ? $_GET['url'] : null;
     $A_postParams = isset($_POST) ? $_POST : null;
 
