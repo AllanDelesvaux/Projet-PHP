@@ -5,37 +5,50 @@
 } else {
     echo '
 
-            <di><h1> Bienvenue'.$_SESSION[''].'
+            <div class ="flex flex-row items-center justify-center" ><h1 class="text-3xl text-black font-bold mb-3"> Bienvenue '.$_SESSION['suid']->getNom().' ! </h1></div>
             <div class ="flex flex-row items-center justify-center">    
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                        <h2 class="card-title">Card title!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                <section class="py-3">
+                    <div class="container px-4 mx-auto">
+                        <div class="relative p-6 text-center bg-gray-500 rounded-xl">
+                            <h4 class="text-xl text-white font-bold mb-3">Modification</h4>
+                            <p class="text-gray-300 mb-3">Ici, vous pourrez modifier les recettes déjà existantes.</p>
+                            <div class="flex flex-wrap items-center -mx-2">
+                                <div class="w-full sm:w-1/2 px-2">
+                                    <a href="/"> C\'est parti !</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-3">
+                <div class="container px-4 mx-auto">
+                    <div class="relative p-6 text-center bg-gray-500 rounded-xl">
+                        <h4 class="text-xl text-white font-bold mb-3">Ajout</h4>
+                        <p class="text-gray-300 mb-3">Créez vos propres recettes et ajoutez les à la base de donnée.</p>
+                        <div class="flex flex-wrap items-center -mx-2">
+                            <div class="w-full sm:w-1/2 px-2">
+                                <a href="/"> C\'est parti !</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                        <h2 class="card-title">Card title!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
+            </section>
             </div>
-            <div class ="flex flex-row items-center justify-center">  
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                        <h2 class="card-title">Card title!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+            <div class ="flex flex-row items-center justify-center">    
+                <section class="py-3">
+                    <div class="container px-4 mx-auto">
+                        <div class="relative p-6 text-center bg-gray-500 rounded-xl">
+                            <h4 class="text-xl text-white font-bold mb-3">Administration</h4>
+                            <p class="text-gray-300 mb-3">Supprimer des utilisateurs, ou appréciations.</p>
+                            <div class="flex flex-wrap items-center -mx-2">
+                                <div class="w-full sm:w-1/2 px-2">
+                                    <a href="/"> C\'est parti !</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>';
+                </section>
+            </div>
+            ';
 }
 ?>

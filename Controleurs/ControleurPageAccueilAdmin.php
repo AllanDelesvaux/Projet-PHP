@@ -1,6 +1,6 @@
 <?php
 
-class ControleurAccueilAdmin
+class ControleurPageAccueilAdmin
 {
 
     public function defautAction()
