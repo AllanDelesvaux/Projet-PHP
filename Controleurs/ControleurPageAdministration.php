@@ -5,16 +5,16 @@ class ControleurPageAdministration
 
     public function defautAction()
     {
-        Vue::montrer('VuePage/pageAdministration');
+        Vue::montrer('/VuePage/pageAdministration');
 
     }
 
 
     public function supprimerUtilisateurAction(array $A_parametres = null, array $A_postParams = null){
         $identifiant = $_POST['utilisateurAsupprimer'];
-        $administrateur = new Administrateur('KingTitou','jesuisleboss123456');
+        $administrateur = new Administrateur();
         $administrateur->supprimerUtilisateur($identifiant);
-        Vue::montrer('VuePage/pageAdministration');
+        Vue::montrer('/VuePage/pageAdministration');
     }
 
     /*public function supprimerRecetteAction(array $A_parametres = null, array $A_postParams = null){
@@ -26,9 +26,9 @@ class ControleurPageAdministration
 
     public function supprimerAppreciationAction(array $A_parametres = null, array $A_postParams = null){
         $identifiant = $_POST['appreciationAsupprimer'];  // changer l'id de l'attribut en id appreciation
-        $administrateur = new Administrateur('KingTitou','jesuisleboss123456');
+        $administrateur = new Administrateur();
         $administrateur->supprimerAppreciationParId($identifiant);
-        Vue::montrer('VuePage/pageAdministration');
+        Vue::montrer('/VuePage/pageAdministration');
     }
 
 }

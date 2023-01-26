@@ -4,7 +4,7 @@ final class ControleurPageConnexion
 {
     public function defautAction()
     {
-        Vue::montrer('VuePage/pageConnexion');
+        Vue::montrer('/VuePage/pageConnexion');
     }
 
     public function connexionAction(array $A_parametres = null, array $A_postParams = null)
@@ -36,7 +36,7 @@ final class ControleurPageConnexion
                 exit();
             }            
             session_unset();
-            Vue::montrer('VuePage/pageConnexion', array('error' => $errorMsg));
+            Vue::montrer('/VuePage/pageConnexion', array('error' => $errorMsg));
         }
     }
 }    
