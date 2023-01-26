@@ -9,11 +9,8 @@ final class ControleurAjoutRecette
 
     public function confirmationAction(array $A_parametres = null, array $A_postParams = null)
     {
-        echo "Hello";
-        echo $_POST["nom"];
-        foreach ($_POST as $item) {
-            echo $item;
-        }
+        $administrateur = new Administrateur('KingTitou','jesuisleboss123456');
+        $administrateur->ajouterRecette($_POST);
         
     }
 }    
