@@ -4,9 +4,11 @@
     <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
         <div class="bg-gray-900 w-full shadow rounded p-8 sm:p-6 -mt-72">
         <div class="flex items-start w-full p-0 pb-5">  
+                <form action="/PageAccueilAdmin">
                     <button class="font-semibold text-white bg-blue-700 rounded px-3 py-2 ">
                         Retour administration
                     </button>
+                </form>
             </div>
             <p class="text-3xl font-bold leading-7 text-center text-white">Création de Recette</p>
             <form action="/ajoutRecette/confirmation" method="POST">

@@ -10,6 +10,13 @@ else
         <div class="bg-gradient-to-b from-blue-800 to-blue-600 h-96"></div>
         <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
             <div class="bg-gray-900 w-full shadow rounded p-8 sm:p-12 -mt-72">
+            <div class="flex items-start w-full p-0 pb-5">  
+            <form action="/PageAccueilAdmin">
+                    <button class="font-semibold text-white bg-blue-700 rounded px-3 py-2 ">
+                        Retour administration
+                    </button>
+                    </form>
+            </div>
                 <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                     <h1 class="text-4xl font-bold leading-2 text-center text-white">Administration</h1>
                     <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">';

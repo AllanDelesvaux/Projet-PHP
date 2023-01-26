@@ -14,7 +14,7 @@
                             <p class="text-gray-300 mb-3">Ici, vous pourrez modifier les recettes déjà existantes.</p>
                             <div class="flex flex-wrap items-center -mx-2">
                                 <div class="w-full sm:w-1/2 px-2">
-                                    <a href="/"> C\'est parti !</a>
+                                    <a href="/ModifRecette"> C\'est parti !</a>
                                 </div>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                         <p class="text-gray-300 mb-3">Créez vos propres recettes et ajoutez les à la base de donnée.</p>
                         <div class="flex flex-wrap items-center -mx-2">
                             <div class="w-full sm:w-1/2 px-2">
-                                <a href="/"> C\'est parti !</a>
+                                <a href="/AjoutRecette"> C\'est parti !</a>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <p class="text-gray-300 mb-3">Supprimer des utilisateurs, ou appréciations.</p>
                             <div class="flex flex-wrap items-center -mx-2">
                                 <div class="w-full sm:w-1/2 px-2">
-                                    <a href="/"> C\'est parti !</a>
+                                    <a href="/PageAdministration"> C\'est parti !</a>
                                 </div>
                             </div>
                         </div>
