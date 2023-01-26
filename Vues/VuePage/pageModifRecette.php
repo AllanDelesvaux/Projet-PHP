@@ -12,7 +12,8 @@
             <form action="/modifRecette/confirmation" method="post">
                 <div class="md:flex items-center mt-12">
                     <div class="w-full md:w-1/2 flex flex-col">
-                        <label class="font-semibold leading-none text-gray-300">Nom Recette</label>
+                        <label class="font-semibold leading-none text-gray-300">Nom Recette <?php echo $A_vue['erreur']?> </label>
+                        
                         <input name='nomRecette' type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" />
                     </div>
                     <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">

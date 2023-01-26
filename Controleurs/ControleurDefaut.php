@@ -4,10 +4,10 @@ final class ControleurDefaut
 {
     public function defautAction()
     {
-        Vue::montrer('VuePage/principaleHaut');
-        Vue::montrer('VuePage/principale', array('section'=>'haut'));
+        Vue::montrer('/VuePage/principaleHaut');
+        Vue::montrer('/VuePage/principale', array('section'=>'haut'));
         $this->afficherImageAction();
-        Vue::montrer('VuePage/principale', array('section'=>'bas'));
+        Vue::montrer('/VuePage/principale', array('section'=>'bas'));
     }
 
     public function afficherImageAction(){

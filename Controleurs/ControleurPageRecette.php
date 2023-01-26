@@ -4,7 +4,7 @@ class ControleurPageRecette
 {
     public function defautAction()
     {
-        Vue::montrer('VuePage/recette');
+        Vue::montrer('/VuePage/recette');
     }
 
     public function afficherNomRecetteAction(array $A_parametres = null, array $A_postParams = null){
@@ -13,10 +13,10 @@ class ControleurPageRecette
         $resultatsRecherche = $recherche->rechercheParNom($nom_recette);
 
         if((empty($resultatsRecherche))){
-            Vue::montrer('VuePage/vide');
+            Vue::montrer('/VuePage/vide');
         }else{
             for ($i = 0; $i < sizeof($resultatsRecherche); ++$i) {
-                Vue::montrer('VuePage/recette', array('nomRecette' => $resultatsRecherche[$i]->Nom_recette, 'note' => $resultatsRecherche[$i]->note_moyenne, 'tempsPrepa' => $resultatsRecherche[$i]->temps_de_preparation,'cout' => $resultatsRecherche[$i]->cout, 'difficulte' => $resultatsRecherche[$i]->difficulte,'description' => $resultatsRecherche[$i]->description_prépa));
+                Vue::montrer('/VuePage/recette', array('nomRecette' => $resultatsRecherche[$i]->Nom_recette, 'note' => $resultatsRecherche[$i]->note_moyenne, 'tempsPrepa' => $resultatsRecherche[$i]->temps_de_preparation,'cout' => $resultatsRecherche[$i]->cout, 'difficulte' => $resultatsRecherche[$i]->difficulte,'description' => $resultatsRecherche[$i]->description_prépa));
             }
         }
         //echo $nom_recette;

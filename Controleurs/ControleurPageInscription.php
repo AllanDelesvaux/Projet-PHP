@@ -4,7 +4,7 @@ final class ControleurPageInscription
 {
     public function defautAction()
     {
-        Vue::montrer('VuePage/pageInscription');
+        Vue::montrer('/VuePage/pageInscription');
     }
 
     public function inscriptionAction(array $A_parametres = null, array $A_postParams = null)
@@ -17,14 +17,14 @@ final class ControleurPageInscription
         if($_password != $_password_confirm){
             $errorMsg="Mot de passe et confirmation de mot de passe non-identique";
             session_unset();
-            Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
+            Vue::montrer('/VuePage/pageInscription', array('error' => $errorMsg));
         }
         else{
             $user = new Utilisateur();
             if ($user->isExisting($_login)){
                 $errorMsg="Un compte existe déjà avec cet e-mail";
                 session_unset();
-                Vue::montrer('VuePage/pageInscription', array('error' => $errorMsg));
+                Vue::montrer('/VuePage/pageInscription', array('error' => $errorMsg));
             }
             else{
                 if(!$_FILES['photo']['name'] == "")
