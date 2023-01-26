@@ -1,4 +1,4 @@
-<nav class="bg-blueGray-50 dark:bg-amber-700">
+<nav class="bg-[#C87B00]">
 
 
     <!--modal-->
@@ -28,7 +28,7 @@
     </div>
 
     <!---------------->
-    <div class="container mx-auto overflow-hidden dark:bg-amber-700">
+    <div class="container mx-auto overflow-hidden bg-[#C87B00]">
         <div class="flex items-center justify-between px-4 py-4 bg-blueGray-50">
                 <div class="flex  items-center  w-1/5   ">
                         <a href="/">
