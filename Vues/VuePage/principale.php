@@ -9,7 +9,7 @@ if($A_vue['section'] == 'haut'){
 ?>
 </div>
     </div>
-</section>;
+</section>
 <?php
 }
 ?>
