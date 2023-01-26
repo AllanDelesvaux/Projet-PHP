@@ -35,10 +35,11 @@ class Administrateur extends Utilisateur
         $this->_D_date_derniere_connexion = $table->date_derniere_connexion;
     }
 
-    public function ajouterRecette($NomRecette,$noteMoyenne,$photo,$tempsDePreparation,$descriptionPrepa,$cout,$difficulte){
+    public function ajouterRecette($valeurs){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prépa,cout,difficulte) values ('".$NomRecette."','".$noteMoyenne."','".$NomRecette."','".$photo."','".$tempsDePreparation."','".$descriptionPrepa."','".$cout."','".$difficulte."')";
+        $requete = "insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prépa,cout,difficulte) 
+values ('".$valeurs[0]."','".$valeurs[1]."','".$valeurs[2]."','".$valeurs[3]."','".$valeurs[4]."','".$valeurs[5]."','".$valeurs[6]."','".$valeurs[7]."')";
         $O_statement = $connection->prepare($requete);
         $O_statement->execute();
     }

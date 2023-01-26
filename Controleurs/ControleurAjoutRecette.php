@@ -9,6 +9,10 @@ final class ControleurAjoutRecette
 
     public function confirmationAction(array $A_parametres = null, array $A_postParams = null)
     {
-        
+        echo "Hello";
+        foreach ($_POST as $item) {
+            echo $item;
         }
+        
+    }
 }    
