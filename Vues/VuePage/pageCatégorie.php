@@ -12,380 +12,166 @@
                <table class="table-auto w-full">
                   <thead>
                      <tr class="bg-primary text-center">
-                        <th
-                           class="
-                           w-1/6
-                           min-w-[160px]
-                           text-lg
-                           font-semibold
-                           text-white
-                           py-4
-                           lg:py-7
-                           px-3
-                           lg:px-4
-                           border-l border-transparent
-                           "
-                           >
+                        <th class="w-1/6 min-w-[160px] text-lg font-semibold text-white py-4 lg:py-7 px-3 lg:px-4 border-l border-transparent">
                            Ingredients
                         </th>
-                        <th
-                           class="
-                           w-1/6
-                           min-w-[160px]
-                           text-lg
-                           font-semibold
-                           text-white
-                           py-4
-                           lg:py-7
-                           px-3
-                           lg:px-4
-                           "
-                           >
+                        <th class="w-1/6 min-w-[160px] text-lg font-semibold text-white py-4 lg:py-7 px-3 lg:px-4 border-l border-transparent">
                            Ustensiles
                         </th>
-                        <th
-                           class="
-                           w-1/6
-                           min-w-[160px]
-                           text-lg
-                           font-semibold
-                           text-white
-                           py-4
-                           lg:py-7
-                           px-3
-                           lg:px-4
-                           "
-                           >
+                        <th class="w-1/6 min-w-[160px] text-lg font-semibold text-white py-4 lg:py-7 px-3 lg:px-4 border-l border-transparent">
                            Types de cuissons
                         </th>
-                        <th
-                           class="
-                           w-1/6
-                           min-w-[160px]
-                           text-lg
-                           font-semibold
-                           text-white
-                           py-4
-                           lg:py-7
-                           px-3
-                           lg:px-4
-                           "
-                           >
+                        <th class="w-1/6 min-w-[160px] text-lg font-semibold text-white py-4 lg:py-7 px-3 lg:px-4 border-l border-transparent">
                            Prix
                         </th>
-                        <th
-                           class="
-                           w-1/6
-                           min-w-[160px]
-                           text-lg
-                           font-semibold
-                           text-white
-                           py-4
-                           lg:py-7
-                           px-3
-                           lg:px-4
-                           "
-                           >
+                        <th class="w-1/6 min-w-[160px] text-lg font-semibold text-white py-4 lg:py-7 px-3 lg:px-4 border-l border-transparent">
                            difficultés
                         </th>
-                        <th
-                           class="
-                           w-1/6
-                           min-w-[160px]
-                           text-lg
-                           font-semibold
-                           text-white
-                           py-4
-                           lg:py-7
-                           px-3
-                           lg:px-4
-                           border-r border-transparent
-                           "
-                           >
+                        <th class="w-1/6 min-w-[160px] text-lg font-semibold text-white py-4 lg:py-7 px-3 lg:px-4 border-l border-transparent">
                            Particularités
                         </th>
                      </tr>
                   </thead>
                   <tbody>
+
+
                      <tr>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-l border-[#E8E8E8]
-                           "
-                           >
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                            Sel
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-[#E8E8E8]
-                           "
-                           >
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
                            Rouleau
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-[#E8E8E8]
-                           "
-                           >
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                            Four
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-[#E8E8E8]
-                           "
-                           >
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
                            100$
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-[#E8E8E8]
-                           "
-                           >
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                            Très facile
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-r border-[#E8E8E8]
-                           "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
-                              border border-primary
-                              py-2
-                              px-6
-                              text-primary
-                              inline-block
-                              rounded
-                              hover:bg-primary hover:text-white
-                              "
-                              >
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
                            Végan
                            </a>
                         </td>
                      </tr>
+
+
                      <tr>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-l border-[#E8E8E8]
-                           "
-                           >
-                           .com
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Sel
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           1 Year
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Rouleau
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           $75.00
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Four
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           $5.00
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           100$
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           $10.00
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Très facile
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-r border-[#E8E8E8]
-                           "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
-                              border border-primary
-                              py-2
-                              px-6
-                              text-primary
-                              inline-block
-                              rounded
-                              hover:bg-primary hover:text-white
-                              "
-                              >
-                           Sign Up
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Végan
                            </a>
                         </td>
                      </tr>
+
+
                      <tr>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-l border-[#E8E8E8]
-                           "
-                           >
-                           .com
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Sel
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           1 Year
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Rouleau
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           $75.00
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Four
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           $5.00
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           100$
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-[#F3F6FF]
-                           border-b border-[#E8E8E8]
-                           "
-                           >
-                           $10.00
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Très facile
                         </td>
-                        <td
-                           class="
-                           text-center text-dark
-                           font-medium
-                           text-base
-                           py-5
-                           px-2
-                           bg-white
-                           border-b border-r border-[#E8E8E8]
-                           "
-                           >
-                           <a
-                              href="javascript:void(0)"
-                              class="
-                              border border-primary
-                              py-2
-                              px-6
-                              text-primary
-                              inline-block
-                              rounded
-                              hover:bg-primary hover:text-white
-                              "
-                              >
-                           Sign Up
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Végan
                            </a>
                         </td>
                      </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Sel
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Rouleau
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Four
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           100$
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Très facile
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Végan
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Sel
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Rouleau
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Four
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           100$
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Très facile
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Végan
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Sel
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Rouleau
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Four
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           100$
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Très facile
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Végan
+                           </a>
+                        </td>
+                     </tr>
+
+                     
                   </tbody>
                </table>
             </div>
