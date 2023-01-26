@@ -4,7 +4,8 @@
          alt=""> <!--photo envoyez par le controleur -->
 
     <div class="mt-8">
-        <span class="text-blue-500 uppercase"><?php echo $A_vue['nomRecetteAleatoire']; ?></span>
+        <span class="text-blue-500 uppercase"><?php echo $A_vue['note']; ?></span>
+        <span class="text-blue-500 uppercase"><?php echo $A_vue['tempsPrepa']; ?></span>
 
         <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
             <?php echo $A_vue['nomRecetteAleatoire']; ?>
