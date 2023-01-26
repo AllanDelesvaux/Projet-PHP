@@ -5,16 +5,20 @@ final class ControleurDefaut
     public function defautAction()
     {
         Vue::montrer('VuePage/principaleHaut');
-        Vue::montrer('VuePage/principale');
+        $this->afficherImageAction();
+
         //Vue::montrer('VuePage/recette', array(''=>''));
         //Vue::montrer('VuePage/recette', array(''=>''));
     }
 
-
     public function afficherImageAction(){
         $recette = new Recette();
-        $recette->afficherNomRecetteAleatoire();
-        Vue::montrer('VuePage/principale');
+        $recette->afficherRecetteAleatoire();
+        foreach ($recette->afficherRecetteAleatoire() as $element){
+            Vue::montrer('VuePage/principale', array('photo'=> $element->photo,'nomRecetteAleatoire' => $element->Nom_recette,'description' => $element->description_prépa ));
+
+
+        }
     }
 
 }

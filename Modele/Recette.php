@@ -115,27 +115,25 @@
             }
         }
 
-        public function afficherImageRecetteAleatoire(){
+        public function afficherRecetteAleatoire(){
             $connection = new ConnectionDatabase();
             $connection = $connection->getConnection();
-            $requete = "SELECT photo FROM `Recette` ORDER BY rand() LIMIT 1 ";
+            $requete = "SELECT * FROM `Recette` ORDER BY rand() LIMIT 3 ";
             $O_statement = $connection->prepare($requete);
-            if($O_statement->execute()){
-                echo 'photo aletoire reussi' ;
-            }
+            $O_statement->execute();
+            return $O_statement->fetchAll(PDO::FETCH_OBJ);
 
         }
 
-        public function afficherNomRecetteAleatoire(){
+        /*public function afficherNomRecetteAleatoire(){
             $connection = new ConnectionDatabase();
             $connection = $connection->getConnection();
-            $requete = "SELECT Nom_recette  FROM `Recette` ORDER BY rand() LIMIT 1 ";
+            $requete = "SELECT *  FROM `Recette` ORDER BY rand() LIMIT 1 ";
             $O_statement = $connection->prepare($requete);
-            if($O_statement->execute()){
-                echo 'nom aletoire reussi' ;
-            }
+            $O_statement->execute();
+            return $O_statement->fetchAll(PDO::FETCH_OBJ);
 
-        }
+        }*/
 
 
     }
