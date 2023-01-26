@@ -46,7 +46,7 @@ class Administrateur extends Utilisateur
                                     $valeurs['cout'],
                                     $valeurs['difficulte']))
         ){
-            echo "recette insere";
+            echo "recette inseréeS";
         }
         else{
             echo "ca marche pas";
@@ -71,8 +71,17 @@ class Administrateur extends Utilisateur
         $O_statement->execute(); // FETCH_ASSOC
       }
 
-    public function modifierRecette($NomRecette,$noteMoyenne,$photo,$tempDePreparation,$descriptionPrepa,$cout,$difficulte){
-
+    public function modifierRecette($NomRecette,$tempsDePreparation,$descriptionPrepa,$cout,$difficulte){
+        $connection = new ConnectionDatabase();
+        $connection = $connection->getConnection();
+        $requete = "UPDATE Recette SET temps_de_preparation='".$tempsDePreparation."', description_prepa='".$descriptionPrepa."', cout='".$cout."', difficulte ='".$difficulte."' WHERE Nom_recette ='".$NomRecette."'";
+        $O_statement = $connection->prepare($requete);
+        if($O_statement->execute()){
+            echo "recette modifiée";
+        }
+        else{
+            echo "ca marche pas";
+        }
     }
 
 
