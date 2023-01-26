@@ -10,14 +10,6 @@ class ControleurRecherche
         Vue::montrer('/VuePage/resultatRecherche', array('resultats'=>$resultatsRecherche));
     }
 
-    public function afficherResultatsAction(array $A_parametres = null, array $A_postParams = null){
-        $nom_recette= $_POST['search']; // changer l'id de l'attribut en id utilisateur
-        $recherche = new Recherche();
-        $resultatsRecherche = $recherche->rechercheParNom($nom_recette);
-
-        
-        //echo $nom_recette;
-    }
     public function afficherPhotoRecetteAction(){
 
 

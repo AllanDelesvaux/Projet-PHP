@@ -71,7 +71,7 @@
             if($O_statement->execute([$nomRecette])){
                 echo '<p>  recette supprimé </p>' ;
             }
-        }*/
+        }
 
         public function tempsDePreparation($nomRecette){
             $connection = new ConnectionDatabase();
@@ -113,7 +113,7 @@
             if($O_statement->execute([$nomRecette])){
                 echo 'description' ;
             }
-        }
+        }*/
 
         public function afficherRecetteAleatoire(){
             $connection = new ConnectionDatabase();
@@ -123,6 +123,15 @@
             $O_statement->execute();
             return $O_statement->fetchAll(PDO::FETCH_OBJ);
 
+        }
+
+        public function afficherRecetteParNom($nom){
+            $connection = new ConnectionDatabase();
+            $connection = $connection->getConnection();
+            $requete = "SELECT * FROM `Recette` where Nom_recette=?";
+            $O_statement = $connection->prepare($requete);
+            $O_statement->execute(array($nom));
+            return $O_statement->fetchAll(PDO::FETCH_OBJ);
         }
 
         /*public function afficherResultatsAleatoire(){
