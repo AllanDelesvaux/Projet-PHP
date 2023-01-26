@@ -8,6 +8,7 @@ final class ControleurDefaut
         Vue::montrer('VuePage/principale', array('section'=>'haut'));
         $this->afficherImageAction();
         Vue::montrer('VuePage/principale', array('section'=>'bas'));
+        Vue::montrer('VuePage/pageCatégorie');
     }
 
     public function afficherImageAction(){
