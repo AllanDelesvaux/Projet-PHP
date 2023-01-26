@@ -20,10 +20,10 @@
                     <div class="relative w-full max-w-lg">
                         <div class="absolute top-0 rounded-full bg-violet-300 -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                         <div class="relative">
-                            <!-- vue image -->
-
-                            <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero"
-                                 src="./assets/brooke-lark-08bOYnH_r_E-unsplash.jpg">
+                        <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero"
+                            src="<?php echo $A_vue['photo']; ?>"
+                            alt="">
+                            
                         </div>
                     </div>
                 </div>

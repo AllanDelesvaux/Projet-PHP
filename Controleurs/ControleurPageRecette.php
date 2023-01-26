@@ -16,7 +16,7 @@ class ControleurPageRecette
             Vue::montrer('/VuePage/vide');
         }else{
             for ($i = 0; $i < sizeof($resultatsRecherche); ++$i) {
-                Vue::montrer('/VuePage/recette', array('nomRecette' => $resultatsRecherche[$i]->Nom_recette, 'note' => $resultatsRecherche[$i]->note_moyenne, 'tempsPrepa' => $resultatsRecherche[$i]->temps_de_preparation,'cout' => $resultatsRecherche[$i]->cout, 'difficulte' => $resultatsRecherche[$i]->difficulte,'description' => $resultatsRecherche[$i]->description_prépa));
+                Vue::montrer('/VuePage/recette', array('photo' => $resultatsRecherche[$i]->photo, 'nomRecette' => $resultatsRecherche[$i]->Nom_recette, 'note' => $resultatsRecherche[$i]->note_moyenne, 'tempsPrepa' => $resultatsRecherche[$i]->temps_de_preparation,'cout' => $resultatsRecherche[$i]->cout, 'difficulte' => $resultatsRecherche[$i]->difficulte,'description' => $resultatsRecherche[$i]->description_prepa));
             }
         }
         //echo $nom_recette;
