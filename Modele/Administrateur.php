@@ -38,7 +38,7 @@ class Administrateur extends Utilisateur
     public function ajouterRecette($valeurs){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "insert into Recette(Nom_recette,temp_de_preparation,description_prépa,cout,difficulte) values (?,?,?,?,?)";
+        $requete = "insert into Recette(Nom_recette,temps_de_preparation,description_prépa,cout,difficulte) values (?,?,?,?,?)";
         $O_statement = $connection->prepare($requete);
         if($O_statement->execute(array($valeurs['nom'],
                                     $valeurs['preparation'],
