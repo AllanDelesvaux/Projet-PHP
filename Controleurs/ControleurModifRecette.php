@@ -14,7 +14,8 @@ final class ControleurModifRecette
         $cout = (!empty($_POST['cout'])) ?$_POST['cout'] : null;
         $difficulte = (!empty($_POST['difficulte'])) ?$_POST['difficulte'] : null;
         $description = (!empty($_POST['description'])) ?$_POST['description'] : null;
-        $admin = new Administrateur('KingTitou','jesuisleboss123456');
+        $admin = new Administrateur();
+        $admin->connect('KingTitou','jesuisleboss123456');
         $admin->modifierRecette($nomRecette,$temps,$description,$cout,$difficulte);
     }
 }    
