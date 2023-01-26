@@ -1,7 +1,7 @@
 <?php 
 if($A_vue['section'] == 'haut'){
 ?>
-    <section class="bg-white dark:bg-zinc-800 ">
+    <section class="bg-white dark:bg-[#51350D] ">
     <div class="container px-6 py-10 mx-auto">
         <div class="grid grid-cols-1 gap-8 md:grid-rows-1 md:grid-cols-3 xl:grid-cols-3">
 <?php

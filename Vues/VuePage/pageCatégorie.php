@@ -11,7 +11,7 @@
             <div class="max-w-full overflow-x-auto">
                <table class="table-auto w-full">
                   <thead>
-                     <tr class="bg-primary text-center">
+                     <tr class="bg-black text-center">
                         <th class="w-1/6 min-w-[160px] text-lg font-semibold text-white py-4 lg:py-7 px-3 lg:px-4 border-l border-transparent">
                            Ingredients
                         </th>
@@ -40,13 +40,14 @@
                            Sel
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Rouleau
+                        moule à tarte
+
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                            Four
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           100$
+                           Gratuit
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                            Très facile
@@ -60,22 +61,24 @@
 
                      <tr>
                      <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Sel
+                            Beurre
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Rouleau
+                        Robot patissier
+	
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Four
+                           Poêle
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           100$
+                           Peu couteux
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Très facile
+                        Facile
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Végan
+                        Sans Gluten
+
                            </a>
                         </td>
                      </tr>
@@ -83,67 +86,49 @@
 
                      <tr>
                      <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Sel
+                            Farine
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Rouleau
+                        Frit
+	
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                            Four
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           100$
+                           Raisonnable
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Très facile
+                        Moyen
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Végan
+                        Végératrien
+
                            </a>
                         </td>
                      </tr>
 
                      <tr>
                      <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Sel
+                            Eau
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Rouleau
+                        Fouet Cuisine
+	
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Four
+                           Bain Marie
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           100$
+                           Honnéreux
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Très facile
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Végan
-                           </a>
-                        </td>
-                     </tr>
+                        Difficile
 
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Végétalien
 
-                     <tr>
-                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Sel
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Rouleau
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Four
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           100$
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Très facile
-                        </td>
-                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Végan
                            </a>
                         </td>
                      </tr>
@@ -151,27 +136,673 @@
 
                      <tr>
                      <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Sel
+                        Oeufs
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Rouleau
+                        Saladier
+	
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Four
+                           Vapeur
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           100$
+                           Accessible
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
-                           Très facile
+                        Très Difficile
                         </td>
                         <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
-                           Végan
+                        Sans Lactose
+
                            </a>
                         </td>
                      </tr>
 
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Sucre en grain
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Papier Sulfurisé
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Feu de bois
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           Cher
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Extrême
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Sans Sucres Ajoutés
+
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Gousse de vanille
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        rape
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           micro-onde
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                            Très cher
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Démentiel
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Crudivores
+
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Rhum
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Mixeur
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Casserole
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                          Impossible
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        A base de plantes
+
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Sucre en poudre
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Spatule
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Plancha
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                          Divin
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Peu de Glucides
+
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Lait
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Papier Cuisson
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Barbecue
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Cétogène
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Jaune d'oeuf
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Poche à douille
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Sous vide
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                       
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Beurre Doux
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Douille Cannelée
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           Fumé
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Chocolat noir
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Frigo
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Chocolat noir
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        casserole
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Lait d'amande
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Ramequins
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                       
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Canelle
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        plat 
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
                      
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                       
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Farine de blé
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        moule a cannelés
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                       
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                       
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Levure Chimique
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        poêle
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                      
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Lait d'Avoine
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Rouleau à Patisserie
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Pois chiche
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        pinceau
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                      
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Huile de Raisin
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        fourchette
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                   
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Zeste de Citron
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        maryse
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                       
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Sucre Semoule
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Moule à madelaine
+	
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                      
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Nappage Chocolat
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        Pinceau de cuisine
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Pralin
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                      
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Amandes
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Sucre glace
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                      
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Colorant Alimentaire
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                  
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Sucre Vanillé
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                    
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Blanc d'Oeuf
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                    
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                          
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Pâte feuilletée
+
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+
+                     <tr>
+                     <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                     Farine Maizena
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                           
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                  
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                         
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#F3F6FF] border-b border-l border-[#E8E8E8]">
+                        
+                        </td>
+                        <td class=" text-center text-dark font-medium text-base py-5 px-2 bg-[#E8E8E8] border-b border-l border-[#E8E8E8]">
+                        
+                           </a>
+                        </td>
+                     </tr>
+                    
                   </tbody>
                </table>
             </div>
