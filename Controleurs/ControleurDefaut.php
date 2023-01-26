@@ -16,7 +16,5 @@ final class ControleurDefaut
         foreach ($recette->afficherRecetteAleatoire() as $element){
            Vue::montrer('Composant/principaleRecette', array('photo'=> $element->photo,'nomRecetteAleatoire' => $element->Nom_recette,'description' => $element->description_prépa ));
         }
-
     }
-
 }
