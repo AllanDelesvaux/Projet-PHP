@@ -23,7 +23,9 @@ final class ControleurPageConnexion
             header('Location: /');
             exit();
         } else {
-            $admin = new Administrateur($login,$password);
+            $admin = new Administrateur();
+            $admin->connect($login, $password);
+            echo $admin->getId();
             if (!(is_null($admin->getId()))) {
                 if (!isset($_SESSION['suid'])){
                     $_SESSION['suid'] = $admin;

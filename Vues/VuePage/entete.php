@@ -29,7 +29,7 @@
 
     <!---------------->
     <div class="container mx-auto overflow-hidden dark:bg-amber-700">
-        <div class="flex items-center justify-between px-4 py-5 bg-blueGray-50">
+        <div class="flex items-center justify-between px-4 py-4 bg-blueGray-50">
                 <div class="flex  items-center  w-1/5   ">
                         <a href="/">
                             <img src="/assets/cake.svg" alt="" class="h-14">
@@ -42,23 +42,19 @@
                 </div>
             <div class="w-2/5">
                 <div class="flex items-center flex-row">
+                    <?php
+                        if (!isset($_SESSION['suid']) ) {
+                            
+                            Vue::montrer('Composant/bouton', array('action' => 'pageInscription', 'valeur' => 'Inscription'));
+                            Vue::montrer('Composant/bouton', array('action' => 'pageConnexion', 'valeur' => 'Connexion'));
 
-
-                       <?php
-                            if (!isset($_SESSION['suid']) ) {
-                                
-                                Vue::montrer('Composant/bouton', array('action' => 'pageInscription', 'valeur' => 'Inscription'));
-                                Vue::montrer('Composant/bouton', array('action' => 'pageConnexion', 'valeur' => 'Connexion'));
-
-                            }
-                            else{
-                                
-                                Vue::montrer('Composant/profil'); //icone de l'utilisateur
-                                Vue::montrer('Composant/bouton', array('action' => 'Deconnexion', 'valeur' => 'Déconnexion'));
-                            }
-
-        
-?>
+                        }
+                        else{
+                            
+                            Vue::montrer('Composant/profil'); //icone de l'utilisateur
+                            Vue::montrer('Composant/bouton', array('action' => 'Deconnexion', 'valeur' => 'Déconnexion'));
+                        }
+                    ?>
 
                 </div>
             </div>

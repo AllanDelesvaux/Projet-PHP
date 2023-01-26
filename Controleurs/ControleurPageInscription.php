@@ -29,7 +29,7 @@ final class ControleurPageInscription
             else{
                 if(!$_FILES['photo']['name'] == "")
                 {
-                    $target_file = '/assets/'.time().'_'.basename($_FILES['photo']["name"]);
+                    $target_file = '/assets/profile_pics/'.time().'_'.basename($_FILES['photo']["name"]);
                     
                     $uploadOk = 1;
                     
@@ -71,7 +71,7 @@ final class ControleurPageInscription
                     }
                 }
                 else{
-                    $user->setPhoto('/assets/profil.png');
+                    $user->setPhoto('/assets/profile_pics/profil.png');
                 }
 
                 $user->getPhoto();

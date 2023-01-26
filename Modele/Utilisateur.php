@@ -116,7 +116,7 @@ class Utilisateur{
         $this->premiere_connexion = false;
         $this->_D_date_premiere_connexion= date("Y-m-d");
       }
-      }
+    }
 
 
     }
