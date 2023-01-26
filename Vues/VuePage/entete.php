@@ -65,4 +65,4 @@
         </div>
 </nav>
 
-<script src="./Vues/ScriptJS/modal.js"></script>
+<script src="/Vues/ScriptJS/modal.js"></script>

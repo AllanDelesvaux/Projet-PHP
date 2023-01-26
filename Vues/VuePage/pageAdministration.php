@@ -5,7 +5,8 @@
              Administration
         </h1>
         <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
-            <?php Vue::montrer('Composant/blocAdministration',array("titre" => "utilisateurAsupprimer")) ?>
-            <?php Vue::montrer('Composant/blocAdministration',array("titre" => "AppreciationAsupprimer")) ?>
+            <?php Vue::montrer('Composant/blocAdministration',array("titre" => "utilisateurAsupprimer","name" => "utilisateurAsupprimer")) ?>
+            <?php Vue::montrer('Composant/blocAdministration',array("titre" => "AppreciationAsupprimer","name"=> "appreciationAsuppprimer")) ?>
+
         </div>
 </section>
