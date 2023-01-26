@@ -38,10 +38,20 @@ class Administrateur extends Utilisateur
     public function ajouterRecette($valeurs){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $requete = "insert into Recette(Nom_recette,note_moyenne,photo,temp_de_preparation,description_prépa,cout,difficulte) 
-values ('".$valeurs[0]."','".$valeurs[1]."','".$valeurs[2]."','".$valeurs[3]."','".$valeurs[4]."','".$valeurs[5]."','".$valeurs[6]."','".$valeurs[7]."')";
+        $requete = "insert into Recette(Nom_recette,temps_de_preparation,description_prépa,cout,difficulte) values (?,?,?,?,?)";
         $O_statement = $connection->prepare($requete);
-        $O_statement->execute();
+        if($O_statement->execute(array($valeurs['nom'],
+                                    $valeurs['preparation'],
+                                    $valeurs['description'],
+                                    $valeurs['cout'],
+                                    $valeurs['difficulte']))
+        ){
+            echo "recette inseréeS";
+        }
+        else{
+            echo "ca marche pas";
+        }
+
     }
     function insertBDD($champs,$valeurs){
         $O_conn = new ConnectionDatabase();
@@ -61,8 +71,17 @@ values ('".$valeurs[0]."','".$valeurs[1]."','".$valeurs[2]."','".$valeurs[3]."',
         $O_statement->execute(); // FETCH_ASSOC
       }
 
-    public function modifierRecette($NomRecette,$noteMoyenne,$photo,$tempDePreparation,$descriptionPrepa,$cout,$difficulte){
-
+    public function modifierRecette($NomRecette,$tempsDePreparation,$descriptionPrepa,$cout,$difficulte){
+        $connection = new ConnectionDatabase();
+        $connection = $connection->getConnection();
+        $requete = "UPDATE Recette SET temps_de_preparation='".$tempsDePreparation."', description_prepa='".$descriptionPrepa."', cout='".$cout."', difficulte ='".$difficulte."' WHERE Nom_recette ='".$NomRecette."'";
+        $O_statement = $connection->prepare($requete);
+        if($O_statement->execute()){
+            echo "recette modifiée";
+        }
+        else{
+            echo "ca marche pas";
+        }
     }
 
 
