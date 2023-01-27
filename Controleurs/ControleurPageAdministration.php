@@ -25,7 +25,7 @@ class ControleurPageAdministration
     }*/
 
     public function supprimerAppreciationAction(array $A_parametres = null, array $A_postParams = null){
-        $identifiant = $_POST['appreciationAsupprimer'];  // changer l'id de l'attribut en id appreciation
+        $identifiant = $_POST['search'];  // changer l'id de l'attribut en id appreciation
         $administrateur = new Administrateur();
         $administrateur->supprimerAppreciationParId($identifiant);
         Vue::montrer('/VuePage/pageAdministration');

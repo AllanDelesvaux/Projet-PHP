@@ -107,7 +107,7 @@ class Administrateur extends Utilisateur
     public function supprimerAppreciationParId($_I_identifiant){
         $connection = new ConnectionDatabase();
         $connection = $connection->getConnection();
-        $S_requete = "DELETE FROM Appreciation WHERE identifiant=?";
+        $S_requete = "DELETE FROM Appreciation WHERE ID_appreciation=?";
         $O_statement = $connection->prepare($S_requete);
         if($O_statement->execute(array($_I_identifiant))){
             echo '<script>
