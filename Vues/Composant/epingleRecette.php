@@ -1,7 +1,8 @@
+<div class="flex flex-row flex-auto container mt-10 mx-auto w-full bg-white dark:bg-[#C87B00] rounded shadow">
 <div class="m-10 container">
     <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80"
          src="<?php echo $A_vue['photo']; ?>"
-         alt=""> <!--photo envoyez par le controleur -->
+         alt=""> <!--photo envoyée par le controleur -->
 
     <div class="mt-8 w-full inline-block">
         <form action="/pageRecette" method="POST">
@@ -13,4 +14,5 @@
         <p class="text-black-500 uppercase"> difficulte : <?php echo $A_vue['note']; ?></p>
         <p class="text-black-500 uppercase"> Temps de préparation :<?php echo $A_vue['tempsPrepa']; ?></p>
     </div>
+</div>
 </div>

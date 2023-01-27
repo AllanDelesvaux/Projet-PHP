@@ -1,4 +1,4 @@
-<div class="flex flex-row flex-auto container mt-10 mx-auto w-full bg-white dark:bg-slate-600 rounded shadow">
+
 
 <?php 
     $resultatsRecherche = $A_vue['resultats'];
