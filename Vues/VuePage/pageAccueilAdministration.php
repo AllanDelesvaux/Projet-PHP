@@ -9,12 +9,12 @@
             <div class ="flex flex-row items-center justify-center">    
                 <section class="py-3">
                     <div class="container px-4 mx-auto">
-                        <div class="relative p-6 text-center bg-[#51350D] rounded-xl">
+                        <div class="relative p-6 text-center bg-[#C87B00] rounded-xl">
                             <h4 class="text-xl text-white font-bold mb-3">Modification</h4>
                             <p class="text-gray-300 mb-3">Ici, vous pourrez modifier les recettes déjà existantes.</p>
                             <div class="flex flex-wrap items-center -mx-2">
                                 <div class="w-full sm:w-1/2 px-2">
-                                    <a href="/ModifRecette"> C\'est parti !</a>
+                                    <a href="/ModifRecette" class="text-white font-bold" > C\'est parti !</a>
                                 </div>
                             </div>
                         </div>
@@ -22,12 +22,12 @@
                 </section>
                 <section class="py-3">
                 <div class="container px-4 mx-auto">
-                    <div class="relative p-6 text-center bg-[#51350D] rounded-xl">
+                    <div class="relative p-6 text-center bg-[#C87B00] rounded-xl">
                         <h4 class="text-xl text-white font-bold mb-3">Ajout</h4>
                         <p class="text-gray-300 mb-3">Créez vos propres recettes et ajoutez les à la base de donnée.</p>
                         <div class="flex flex-wrap items-center -mx-2">
                             <div class="w-full sm:w-1/2 px-2">
-                                <a href="/AjoutRecette"> C\'est parti !</a>
+                                <a href="/AjoutRecette" class="text-white font-bold" > C\'est parti !</a>
                             </div>
                         </div>
                     </div>
@@ -37,12 +37,12 @@
             <div class ="flex flex-row items-center justify-center">    
                 <section class="py-3">
                     <div class="container px-4 mx-auto">
-                        <div class="relative p-6 text-center bg-[#51350D] rounded-xl">
+                        <div class="relative p-6 text-center bg-[#C87B00] rounded-xl">
                             <h4 class="text-xl text-white font-bold mb-3">Administration</h4>
                             <p class="text-gray-300 mb-3">Supprimer des utilisateurs, ou appréciations.</p>
                             <div class="flex flex-wrap items-center -mx-2">
                                 <div class="w-full sm:w-1/2 px-2">
-                                    <a href="/PageAdministration"> C\'est parti !</a>
+                                    <a href="/PageAdministration" class="text-white font-bold" > C\'est parti !</a>
                                 </div>
                             </div>
                         </div>

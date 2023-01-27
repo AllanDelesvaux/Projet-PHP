@@ -7,7 +7,7 @@ else
     {
     echo '
     <section class="w-full bg-[#C87B00] h-screen">
-        <div class="bg-gradient-to-b from-white to-amber-700 h-96"></div>
+        <div class="bg-gradient-to-b from-white bg-[#C87B00] h-96"></div>
         <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
             <div class="bg-black w-full shadow rounded p-8 sm:p-12 -mt-72">
             <div class="flex items-start w-full p-0 pb-5">  
