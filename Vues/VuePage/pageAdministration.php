@@ -20,8 +20,8 @@ else
                 <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                     <h1 class="text-4xl font-bold leading-2 text-center text-white">Administration</h1>
                     <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">';
-                        Vue::montrer('Composant/blocAdministration',array("titre" => "Utilisateur à supprimer","name" => "Supprimer Utilisateur",'action'=>"/pageAdministration/supprimerUtilisateur"));
-                        Vue::montrer('Composant/blocAdministration',array("titre" => "Appreciation à supprimer","name"=> "Supprimer Appreciation",'action'=> "/pageAdministration/supprimerAppreciation"));
+                        Vue::montrer('Composant/blocAdministration',array("titre" => "Utilisateur à supprimer","name" => "supprimerUtilisateur",'action'=>"/pageAdministration/supprimerUtilisateur"));
+                        Vue::montrer('Composant/blocAdministration',array("titre" => "Appreciation à supprimer","name"=> "supprimerAppreciation",'action'=> "/pageAdministration/supprimerAppreciation"));
                     echo'
                         </div>
                 </div>
