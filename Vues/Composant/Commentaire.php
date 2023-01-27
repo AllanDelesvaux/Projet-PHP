@@ -17,7 +17,9 @@
 								class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
 								<div class="flex-auto p-5 lg:p-10">
 									<h4 class="text-2xl mb-4 text-black font-semibold">Commentaire</h4>
-									<form id="feedbackForm" action="/pageRecette/appreciation" method="">
+									<form id="feedbackForm" action="/pageRecette/appreciation" method="POST">
+									<input type="hidden" name='nomRecette' value='<?php echo $A_vue['nomRecette']; ?>'>
+									<input type="hidden" name='utilisateur' value='<?php echo $_SESSION['suid']->getId() ?>'>
 										<div class="relative w-full mb-3">
 											<label class="block uppercase text-gray-700 text-xs font-bold mb-2"
                         for="note">Note /10</label><input name="note" id="note" class="border-0 px-3 py-3 rounded text-sm shadow w-full

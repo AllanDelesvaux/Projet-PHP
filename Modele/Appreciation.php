@@ -6,13 +6,19 @@
         private $_F_note;
         private $_D_Date;
         private $_S_commentaire;
+        private $nomRecette;
 
-        function __construct($_U_nom_Auteur, $_F_note, $_D_Date, $_S_commentaire){
+        private $Utilisateur;
+
+        function __construct($_U_nom_Auteur, $_F_note, $_D_Date, $_S_commentaire,$nom_recette,$utilisateur){
 
             $this->_U_nom_Auteur = $_U_nom_Auteur;
             $this->_F_note = $_F_note;
             $this->_D_Date = $_D_Date;
             $this->_S_commentaire = $_S_commentaire;
+            $this->nomRecette = $nom_recette;
+            $this->Utilisateur = $utilisateur;
+
 
         }
 
@@ -29,20 +35,19 @@
             return $result ;
         }
 
-        function ajoutAppréciation($valeurs){
+        function ajoutAppréciation(){
             $connection = new ConnectionDatabase();
-        $connection = $connection->getConnection();
-        $requete = "insert into Appreciation( note, date_appreciation, Nom_recette, commentaire, Id_identifiant) values (?,?,?,?,?)";
-        $O_statement = $connection->prepare($requete);
-        $O_statement->execute(
+            $connection = $connection->getConnection();
+            $requete = "insert into Appreciation( note, date_appreciation, Nom_recette, commentaire, Id_identifiant) values (?,?,?,?,?)";
+            $O_statement = $connection->prepare($requete);
+            $O_statement->execute(
             array(
-                $valeurs['note'],
-                date('Y-m-j'),
-                $valeurs['difficulte'],
-                $valeurs['message'],
-                $valeurs['difficulte'],
+                $this->_F_note,
+                $this->_D_Date,
+                $this->nomRecette,
+                $this->_S_commentaire,
+                $this->Utilisateur
             )
         );
-        
         }
     }

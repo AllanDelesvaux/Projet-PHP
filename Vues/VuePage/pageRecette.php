@@ -51,7 +51,12 @@
                     </div>
                 </div>
 
-<?php Vue::montrer('Composant/Commentaire') ?>
+<?php 
+if(isset($_SESSION['suid']) )
+{
+    Vue::montrer('Composant/Commentaire');
+} 
+?>
 
 
 
