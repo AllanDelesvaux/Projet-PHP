@@ -15,4 +15,17 @@
             $this->_S_commentaire = $_S_commentaire;
 
         }
+
+        function __toString(){
+            $result = 
+            '<div class="text-white border-b-4 border-white p-3 m4 ">
+                <div class="text-white text-xl">'
+                .(string) $this->_U_nom_Auteur.', '
+                .(string) $this->_F_note.'/10 , '
+                .(string) $this->_D_Date.'</div>
+                <div class="text-black text-xl bg-white rounded p-3">'
+                .(string) $this->_S_commentaire.'</div>
+                </div>';
+            return $result ;
+        }
     }
