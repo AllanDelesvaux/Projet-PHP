@@ -18,7 +18,7 @@
 
         function __toString(){
             $result = 
-            '<div class="text-white border-b-4 border-white p-3 m4 ">
+            '<div class="text-white border-b-4 border-white py-3 px-10 w-full ">
                 <div class="text-white text-xl">'
                 .(string) $this->_U_nom_Auteur.', '
                 .(string) $this->_F_note.'/10 , '
