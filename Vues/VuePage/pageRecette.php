@@ -41,6 +41,8 @@
     </div>
 </section>
 
+<?php Vue::montrer('Composant/Commentaire') ?>
+
 
 
 

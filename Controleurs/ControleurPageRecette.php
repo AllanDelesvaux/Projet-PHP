@@ -10,4 +10,10 @@ class ControleurPageRecette
         Vue::montrer('/VuePage/pageRecette', array('nomRecette'=>$resultatsRecherche->Nom_recette, 'photo'=>$resultatsRecherche->photo,  'note'=>$resultatsRecherche->note_moyenne, 'tempsPrepa'=>$resultatsRecherche->temps_de_preparation, 'cout'=>$resultatsRecherche->cout, 'difficulte'=>$resultatsRecherche->difficulte, 'description'=>$resultatsRecherche->description_prepa ));
     }
 
+    public function appreciationAction(){
+        $commentaire = $_POST;
+        $Appréciation = new $Appréciation();
+        $admin->ajouterRecette($recette);
+    }
+
 }
