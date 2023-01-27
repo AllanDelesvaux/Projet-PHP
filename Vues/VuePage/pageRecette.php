@@ -48,8 +48,8 @@
                             print_r((string) $Appreciations[$i]);
                         }
                         ?>
-                    </div >
-                </div >
+                    </div>
+                </div>
 
 
 
