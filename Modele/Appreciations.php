@@ -9,14 +9,14 @@
             $O_conn = new ConnectionDatabase();
             $O_conn = $O_conn->getConnection();
             $_requete = "
-            SELECT U.nom, A.note,	A.date_appreciation,	A.Nom_recette,	A.commentaire , A.Id_identifiant
+            SELECT U.nom, A.note,	A.date_appreciation,	A.Nom_recette,	A.commentaire
             from Appreciation A join Utilisateur U on A.Id_identifiant = U.identifiant
             where A.Nom_recette = '" .$nom_recette."'";
             $O_statement = $O_conn->prepare($_requete);
             $O_statement->execute(); // FETCH_ASSOC
             $appre = $O_statement->fetchAll(PDO::FETCH_OBJ);
             foreach ($appre as $unique) {
-                $tmp = new Appreciation($unique->nom, $unique->note, $unique->date_appreciation, $unique->commentaire,$unique->Nom_recette,$unique->Id_identifiant);
+                $tmp = new Appreciation($unique->nom, $unique->note, $unique->date_appreciation, $unique->commentaire,$unique->Nom_recette,);
                 array_push($this->Appreciations, $tmp);
             }
         }

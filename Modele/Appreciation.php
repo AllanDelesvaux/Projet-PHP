@@ -10,14 +10,13 @@
 
         private $Utilisateur;
 
-        function __construct($_U_nom_Auteur, $_F_note, $_D_Date, $_S_commentaire,$nom_recette,$utilisateur){
+        function __construct($_U_nom_Auteur, $_F_note, $_D_Date, $_S_commentaire,$nom_recette){
 
             $this->_U_nom_Auteur = $_U_nom_Auteur;
             $this->_F_note = $_F_note;
             $this->_D_Date = $_D_Date;
             $this->_S_commentaire = $_S_commentaire;
             $this->nomRecette = $nom_recette;
-            $this->Utilisateur = $utilisateur;
 
 
         }

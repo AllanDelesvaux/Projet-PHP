@@ -16,7 +16,7 @@ class ControleurPageRecette
         $commentaire = $_POST['message'];
         $nomRecette = $_POST['nomRecette'];
         $util = $_POST['utilisateur'];
-        $Appreciation = new Appreciation($_SESSION['suid']->getId(),$note,date('Y-m-d'),$commentaire,$nomRecette,$util);
+        $Appreciation = new Appreciation($_SESSION['suid']->getId(),$note,date('Y-m-d'),$commentaire,$nomRecette);
         $Appreciation->ajoutAppréciation();
         $recherche = new Recherche();
         $resultatsRecherche = $recherche->rechercheParNom($nomRecette)[0];
