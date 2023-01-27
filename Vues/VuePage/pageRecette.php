@@ -34,12 +34,22 @@
                 <dl class="grid grid-cols-1 gap-4 md:grid-cols-2">
                     <?php 
                         Vue::montrer('Composant/blocTextRecette', array('note' => $A_vue['note'], 'tempsPrepa' => $A_vue['tempsPrepa'], 'cout' => $A_vue['cout'], 'difficulte' => $A_vue['difficulte'], 'description' => $A_vue['description']));
-                    ?>
-                </dl>
+                        $Appreciations = $A_vue['Appreciations']->getAppreciations();
+                        ?>
+                    </dl>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+                <div class = "w-full bg-black pb-5">
+                    <h2 class="text-xl text-white font-bold my-3 pt-5">Commentaires</h2>
+                    <div class="flex flex-col justify-start items-center p-5">
+                        <?php
+                        for ($i = 0; $i < count($Appreciations) ; ++$i){
+                            print_r((string) $Appreciations[$i]);
+                        }
+                        ?>
+                    </div >
+                </div >
 
 
 
