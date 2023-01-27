@@ -40,18 +40,15 @@ class Administrateur extends Utilisateur
         $connection = $connection->getConnection();
         $requete = "insert into Recette(Nom_recette,temps_de_preparation,description_prépa,cout,difficulte) values (?,?,?,?,?)";
         $O_statement = $connection->prepare($requete);
-        if($O_statement->execute(array($valeurs['nom'],
-                                    $valeurs['preparation'],
-                                    $valeurs['description'],
-                                    $valeurs['cout'],
-                                    $valeurs['difficulte']))
-        ){
-            echo "recette inseréeS";
-        }
-        else{
-            echo "ca marche pas";
-        }
-
+        $O_statement->execute(
+            array(
+                $valeurs['nom'],
+                $valeurs['preparation'],
+                $valeurs['description'],
+                $valeurs['cout'],
+                $valeurs['difficulte']
+            )
+        );
     }
     function insertBDD($champs,$valeurs){
         $O_conn = new ConnectionDatabase();

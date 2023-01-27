@@ -8,7 +8,13 @@ class ControleurPageRecette
         $recherche = new Recherche();
         $resultatsRecherche = $recherche->rechercheParNom($nom_recette)[0];
         $Appreciations = new Appreciations($resultatsRecherche->Nom_recette);
-        Vue::montrer('/VuePage/pageRecette', array('nomRecette'=>$resultatsRecherche->Nom_recette, 'photo'=>$resultatsRecherche->photo,  'note'=>$resultatsRecherche->note_moyenne, 'tempsPrepa'=>$resultatsRecherche->temps_de_preparation, 'cout'=>$resultatsRecherche->cout, 'difficulte'=>$resultatsRecherche->difficulte, 'description'=>$resultatsRecherche->description_prepa, 'Appreciations'=>$Appreciations));
+        Vue::montrer('/VuePage/pageRecette', array('nomRecette'=>$resultatsRecherche->Nom_recette, 'photo'=>$resultatsRecherche->photo,  'note'=>$resultatsRecherche->note_moyenne, 'tempsPrepa'=>$resultatsRecherche->temps_de_preparation, 'cout'=>$resultatsRecherche->cout, 'difficulte'=>$resultatsRecherche->difficulte, 'description'=>$resultatsRecherche->description_prepa, 'Appreciations'=>$Appreciations ));
+    }
+
+    public function appreciationAction(){
+        $commentaire = $_POST;
+        $Appreciation = new Appreciation();
+        $Appreciation->ajouterRecette($commentaire);
     }
 
 }

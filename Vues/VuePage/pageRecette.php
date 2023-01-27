@@ -51,6 +51,8 @@
                     </div>
                 </div>
 
+<?php Vue::montrer('Composant/Commentaire') ?>
+
 
 
 
