@@ -28,4 +28,21 @@
                 </div>';
             return $result ;
         }
+
+        function ajoutAppréciation($valeurs){
+            $connection = new ConnectionDatabase();
+        $connection = $connection->getConnection();
+        $requete = "insert into Appreciation( note, date_appreciation, Nom_recette, commentaire, Id_identifiant) values (?,?,?,?,?)";
+        $O_statement = $connection->prepare($requete);
+        $O_statement->execute(
+            array(
+                $valeurs['note'],
+                date('Y-m-j'),
+                $valeurs['difficulte'],
+                $valeurs['message'],
+                $valeurs['difficulte'],
+            )
+        );
+        
+        }
     }
